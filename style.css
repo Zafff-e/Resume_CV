@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SCENIC FLUENT DESIGN RESUME CSS
+   SCENIC FLUENT DESIGN RESUME CSS (TWO-COLUMN LAYOUT)
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -15,7 +15,7 @@
   --accent-glow: 0 0 20px rgba(0, 240, 255, 0.4);
   
   --radius: 24px;
-  --gap: 24px;
+  --gap: 32px; /* Increased gap for better spacing between stacked cards */
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -87,20 +87,30 @@ body {
 }
 
 /* --------------------------------------------------------------------------
-   BENTO GRID SYSTEM
+   TWO-COLUMN LAYOUT (Like the First Design)
    -------------------------------------------------------------------------- */
-.bento-container {
+.cv-page {
+  display: flex;
+  gap: var(--gap);
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
 
-.bento-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(180px, auto);
+.sidebar {
+  flex: 0 0 380px; /* Fixed width sidebar */
+  display: flex;
+  flex-direction: column;
   gap: var(--gap);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  min-width: 0; /* Prevents flex blowout */
 }
 
 /* --------------------------------------------------------------------------
@@ -154,37 +164,28 @@ body {
   filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.6));
 }
 
-/* Grid Placement */
-.card-profile { grid-column: span 2; grid-row: span 2; }
-.card-contact { grid-column: span 1; grid-row: span 1; }
-.card-objective { grid-column: span 1; grid-row: span 1; }
-.card-skills { grid-column: span 1; grid-row: span 2; }
-.card-education { grid-column: span 1; grid-row: span 2; }
-.card-experience { grid-column: span 2; grid-row: span 3; }
-.card-projects { grid-column: span 4; grid-row: auto; }
-.card-tools { grid-column: span 4; grid-row: auto; }
-
 /* --------------------------------------------------------------------------
    CONTENT STYLES
    -------------------------------------------------------------------------- */
 /* Profile */
 .profile-content {
   display: flex;
+  flex-direction: column; /* Stacked in sidebar */
   align-items: center;
-  gap: 32px;
-  height: 100%;
-  transform: translateZ(30px); /* 3D pop effect */
+  text-align: center;
+  gap: 20px;
+  transform: translateZ(30px);
 }
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent);
   box-shadow: var(--accent-glow);
 }
 .profile-info h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 8px;
@@ -206,7 +207,7 @@ body {
 }
 
 /* Contact */
-.contact-list { display: flex; flex-direction: column; gap: 16px; justify-content: center; height: 100%; transform: translateZ(20px);}
+.contact-list { display: flex; flex-direction: column; gap: 16px; transform: translateZ(20px);}
 .contact-item { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; color: var(--text-muted); text-decoration: none; transition: color 0.3s, text-shadow 0.3s;}
 .contact-item:hover { color: var(--text-main); text-shadow: 0 0 10px rgba(255,255,255,0.3); }
 .contact-item svg { width: 18px; height: 18px; color: var(--accent); }
@@ -216,9 +217,6 @@ body {
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
-  display: flex;
-  align-items: center;
-  height: 100%;
   font-style: italic;
   transform: translateZ(20px);
 }
@@ -249,8 +247,12 @@ body {
   box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
 }
 
+/* Tools */
+.tools-flex { display: flex; flex-wrap: wrap; gap: 10px; transform: translateZ(20px);}
+.tools-flex span { padding: 8px 16px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.05); border-radius: 14px; font-size: 0.9rem; font-weight: 500; color: var(--text-main);}
+
 /* Experience */
-.timeline { display: flex; flex-direction: column; gap: 28px; transform: translateZ(20px);}
+.timeline { display: flex; flex-direction: column; gap: 32px; transform: translateZ(20px);}
 .timeline-item { border-left: 2px solid rgba(255,255,255,0.1); padding-left: 24px; position: relative; }
 .timeline-item::before {
   content: '';
@@ -279,7 +281,7 @@ body {
 .edu-date { font-size: 0.8rem; color: var(--accent); font-weight: 500; margin-top: 4px;}
 
 /* Projects */
-.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; transform: translateZ(20px);}
+.projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; transform: translateZ(20px);}
 .project {
   background: rgba(0,0,0,0.2);
   padding: 24px;
@@ -303,9 +305,6 @@ body {
 .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto;}
 .project-tags span { font-size: 0.75rem; padding: 4px 10px; background: rgba(255,255,255,0.05); border-radius: 8px; color: var(--text-muted); font-weight: 500; border: 1px solid rgba(255,255,255,0.05);}
 
-/* Tools */
-.tools-flex { display: flex; flex-wrap: wrap; gap: 12px; transform: translateZ(20px);}
-.tools-flex span { padding: 10px 18px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.05); border-radius: 14px; font-size: 0.95rem; font-weight: 500; color: var(--text-main);}
 
 /* --------------------------------------------------------------------------
    SCROLL REVEAL CLASSES
@@ -324,17 +323,13 @@ body {
    RESPONSIVE
    -------------------------------------------------------------------------- */
 @media (max-width: 1024px) {
-  .bento-grid { grid-template-columns: repeat(2, 1fr); }
-  .card-profile, .card-experience, .card-projects, .card-education, .card-tools { grid-column: span 2; }
-  .card-contact, .card-skills, .card-objective { grid-column: span 1; }
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .cv-page { flex-direction: column; }
+  .sidebar { flex: none; width: 100%; }
 }
 
 @media (max-width: 768px) {
   body { padding: 20px 16px; }
-  .bento-grid { grid-template-columns: 1fr; gap: 16px; }
-  .fluent-card { grid-column: span 1 !important; grid-row: auto !important; padding: 24px;}
-  .profile-content { flex-direction: column; text-align: center; gap: 24px;}
+  .fluent-card { padding: 24px; }
   .projects-grid { grid-template-columns: 1fr; }
   
   /* Disable 3D tilt on mobile for performance and UX */
