@@ -28,15 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => el.classList.add('active'));
   }
 
-  // Fluent hover glow effect
+  // Fluent hover glow effect (Optimized for performance)
   const cards = document.querySelectorAll('.fluent-card');
   cards.forEach(card => {
+    let isTicking = false;
+    
     card.addEventListener('mousemove', e => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
+      if (!isTicking) {
+        window.requestAnimationFrame(() => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+          isTicking = false;
+        });
+        isTicking = true;
+      }
     });
   });
 });

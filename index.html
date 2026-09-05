@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AHM Zafir Hasan — Aspiring .NET Developer | CV</title>
   <meta name="description" content="CV of AHM Zafir Hasan — Aspiring .NET Developer specializing in C#, ASP.NET Core, Web API, Entity Framework, and SQL Server. Based in Dhaka, Bangladesh." />
+  
+  <!-- Preload fonts to improve loading speed (LCP) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -212,9 +218,8 @@
       </div>
     </div>
 
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
-  <script src="script.js"></script>
+  <!-- Load scripts with defer so they don't block HTML rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
