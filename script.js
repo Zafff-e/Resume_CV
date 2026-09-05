@@ -27,4 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fallback for older browsers
     revealElements.forEach(el => el.classList.add('active'));
   }
+
+  // Fluent hover glow effect
+  const cards = document.querySelectorAll('.fluent-card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
 });
