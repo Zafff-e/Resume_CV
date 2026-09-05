@@ -159,8 +159,7 @@
     VanillaTilt.init(document.querySelectorAll(".project-card, .timeline-item, .education-item, .training-card, .profile__photo-wrapper"), {
       max: 5,
       speed: 400,
-      glare: true,
-      "max-glare": 0.15,
+      glare: false,
       scale: 1.02
     });
   }

@@ -1163,13 +1163,13 @@ body {
   background: transparent !important;
 }
 
-/* Background Shapes */
+/* Background Shapes - Optimized for performance */
 .bg-shape {
   position: absolute;
-  filter: blur(100px);
   border-radius: 50%;
   animation: float 20s infinite ease-in-out alternate;
   opacity: 0.6;
+  will-change: transform;
 }
 
 .shape-1 {
@@ -1177,7 +1177,7 @@ body {
   left: -10%;
   width: 50vw;
   height: 50vw;
-  background: rgba(6, 182, 212, 0.4);
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.4) 0%, transparent 60%);
   animation-delay: 0s;
 }
 
@@ -1186,7 +1186,7 @@ body {
   right: -10%;
   width: 60vw;
   height: 60vw;
-  background: rgba(139, 92, 246, 0.4);
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, transparent 60%);
   animation-delay: -5s;
 }
 
@@ -1195,7 +1195,7 @@ body {
   left: 30%;
   width: 40vw;
   height: 40vw;
-  background: rgba(236, 72, 153, 0.3);
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, transparent 60%);
   animation-delay: -10s;
 }
 
@@ -1208,16 +1208,16 @@ body {
 /* Glassmorphism Containers */
 .cv-page.glassmorphism {
   background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar {
   background: rgba(15, 23, 42, 0.4) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -1239,9 +1239,9 @@ body {
 
 .timeline-item, .project-card, .education-item, .training-card, .objective-text {
   background: rgba(255, 255, 255, 0.05) !important;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .timeline-item:hover, .project-card:hover, .education-item:hover {
