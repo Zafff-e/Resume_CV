@@ -19,22 +19,9 @@
   <div class="cv-page" id="cv">
     
     <!-- ================================================================
-         SIDEBAR (Left Column)
+         LEFT COLUMN
          ================================================================ -->
-    <aside class="sidebar">
-      
-      <!-- Profile Card -->
-      <div class="fluent-card card-profile reveal" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-perspective="1000">
-        <div class="profile-content">
-          <img src="Zafir_Pic.jpg" alt="AHM Zafir Hasan" class="profile-img" />
-          <div class="profile-info">
-            <h1>AHM Zafir Hasan</h1>
-            <h2>Aspiring .NET Developer</h2>
-            <p>IT graduate with hands-on full-stack development training in ASP.NET, Angular, and React. Transitioning into software development through intensive IsDB IT Scholarship training. Brings 15+ years of general computing familiarity and previous professional experience in research and data analysis.</p>
-          </div>
-        </div>
-      </div>
-
+    <div class="col-left">
       <!-- Contact Card -->
       <div class="fluent-card card-contact reveal" data-tilt data-tilt-max="5" data-tilt-speed="400">
         <div class="card-title">
@@ -72,6 +59,79 @@
         </div>
       </div>
 
+      <!-- Experience Card -->
+      <div class="fluent-card card-experience reveal" data-tilt data-tilt-max="3" data-tilt-speed="400">
+        <div class="card-title">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Experience
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-title">IT Scholarship Training</div>
+            <div class="timeline-company">IsDB IT Scholarship Programme <span class="timeline-date">Jan 2026 — Present</span></div>
+            <ul class="timeline-desc">
+              <li><span>Intensive full-stack software development training in the Microsoft .NET ecosystem</span></li>
+              <li><span>Leading a capstone team project — hyperlocal booking marketplace</span></li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-title">IT Workshop Coordinator</div>
+            <div class="timeline-company">Freelance <span class="timeline-date">Prior Experience</span></div>
+            <ul class="timeline-desc">
+              <li><span>Taught ICT concepts and digital literacy to students</span></li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-title">Management Trainee Officer</div>
+            <div class="timeline-company">Marico Bangladesh Limited <span class="timeline-date">2021 — 2022</span></div>
+            <ul class="timeline-desc">
+              <li><span>Conducted research projects and market evaluation</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Card -->
+      <div class="fluent-card card-education reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
+        <div class="card-title">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Education
+        </div>
+        
+        <div class="edu-item">
+          <div class="edu-degree">Bachelor of Social Sciences in Economics</div>
+          <div class="edu-school">University of Dhaka</div>
+          <div class="edu-date">2014 — 2019</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">Higher Secondary School Certificate (HSC)</div>
+          <div class="edu-school">Cantonment Public School & College</div>
+          <div class="edu-date">2011 — 2013</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         CENTER COLUMN (Profile)
+         ================================================================ -->
+    <div class="col-center">
+      <!-- Profile Card -->
+      <div class="fluent-card card-profile reveal" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-perspective="1000">
+        <div class="profile-content">
+          <img src="Zafir_Pic.jpg" alt="AHM Zafir Hasan" class="profile-img" />
+          <div class="profile-info">
+            <h1>AHM Zafir Hasan</h1>
+            <h2>Aspiring .NET Developer</h2>
+            <p>IT graduate with hands-on full-stack development training in ASP.NET, Angular, and React. Transitioning into software development through intensive IsDB IT Scholarship training. Brings 15+ years of general computing familiarity and previous professional experience in research and data analysis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         RIGHT COLUMN
+         ================================================================ -->
+    <div class="col-right">
       <!-- Skills Card -->
       <div class="fluent-card card-skills reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
         <div class="card-title">
@@ -91,9 +151,9 @@
           <span class="skill-tag">MongoDB</span>
           <span class="skill-tag">REST APIs</span>
           <span class="skill-tag">ADO.NET</span>
-          <span class="skill-tag learning">Angular (Learning)</span>
-          <span class="skill-tag learning">React (Learning)</span>
-          <span class="skill-tag learning">Blazor (Learning)</span>
+          <span class="skill-tag learning">Angular</span>
+          <span class="skill-tag learning">React</span>
+          <span class="skill-tag learning">Blazor</span>
         </div>
       </div>
       
@@ -101,100 +161,17 @@
       <div class="fluent-card card-tools reveal" data-tilt data-tilt-max="2" data-tilt-speed="400">
         <div class="card-title">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          Development Tools & Languages
+          Tools & Languages
         </div>
         <div class="tools-flex">
           <span>Visual Studio</span>
           <span>VS Code</span>
-          <span>SQL Server Management Studio (SSMS)</span>
+          <span>SSMS</span>
           <span>Postman</span>
           <span>Git / GitHub</span>
           <span>English (IELTS 7.5)</span>
           <span>Bengali (Native)</span>
-          <span>German (Basic)</span>
         </div>
-      </div>
-
-    </aside>
-
-    <!-- ================================================================
-         MAIN CONTENT (Right Column)
-         ================================================================ -->
-    <main class="main-content">
-      
-      <!-- Experience Card -->
-      <div class="fluent-card card-experience reveal" data-tilt data-tilt-max="3" data-tilt-speed="400">
-        <div class="card-title">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-          Professional Experience
-        </div>
-        <div class="timeline">
-          
-          <div class="timeline-item">
-            <div class="timeline-title">IT Scholarship Training</div>
-            <div class="timeline-company">IsDB IT Scholarship Programme <span class="timeline-date">Jan 2026 — Present</span></div>
-            <ul class="timeline-desc">
-              <li><span>Intensive full-stack software development training covering the Microsoft .NET ecosystem</span></li>
-              <li><span>Completed modules in SQL Server, C#, .NET, ADO.NET, XML, HTML/CSS/JS, Crystal Reports, ASP.NET Core, and Web API</span></li>
-              <li><span>Leading a capstone team project — hyperlocal skilled-worker booking marketplace</span></li>
-            </ul>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-title">IT Workshop Coordinator / Freelance ICT Tutor</div>
-            <div class="timeline-company">Freelance <span class="timeline-date">Prior Experience</span></div>
-            <ul class="timeline-desc">
-              <li><span>Taught ICT concepts to students preparing for intermediate (HSC) examinations</span></li>
-              <li><span>Conducted workshops covering fundamental computing and digital literacy</span></li>
-            </ul>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-title">Management Trainee Officer</div>
-            <div class="timeline-company">Marico Bangladesh Limited <span class="timeline-date">Jan 2021 — Feb 2022</span></div>
-            <ul class="timeline-desc">
-              <li><span>Conducted research projects and market evaluation activities</span></li>
-              <li><span>Worked with cross-functional teams to support successful project delivery</span></li>
-            </ul>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-title">Research Assistant</div>
-            <div class="timeline-company">SANEM <span class="timeline-date">Jan 2019 — Dec 2020</span></div>
-            <ul class="timeline-desc">
-              <li><span>Developed and maintained web applications using HTML and other software tools</span></li>
-              <li><span>Handled IT-related functions and provided technology-oriented solutions in a research environment</span></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Education Card -->
-      <div class="fluent-card card-education reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
-        <div class="card-title">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          Education
-        </div>
-        
-        <div class="edu-item">
-          <div class="edu-degree">Bachelor of Social Sciences in Economics</div>
-          <div class="edu-school">University of Dhaka</div>
-          <div class="edu-date">2014 — 2019</div>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-degree">Higher Secondary School Certificate (HSC)</div>
-          <div class="edu-school">Cantonment Public School & College</div>
-          <div class="edu-date">2011 — 2013</div>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-degree">Secondary School Certificate (SSC)</div>
-          <div class="edu-school">Rangpur Zilla School</div>
-          <div class="edu-date">2003 — 2011</div>
-        </div>
-
       </div>
 
       <!-- Projects Card -->
@@ -205,17 +182,13 @@
         </div>
         
         <div class="projects-grid">
-          
           <div class="project">
             <div class="project-header">
               <div class="project-title">Skilled-Worker Marketplace</div>
               <div class="project-status status-progress">In Progress</div>
             </div>
             <div class="project-tech">Full Stack API Integration</div>
-            <div class="project-desc">Leading a team project on a hyperlocal skilled-worker booking marketplace, integrating frontend, backend, and API layers.</div>
-            <div class="project-tags">
-              <span>Team Lead</span><span>Full-Stack</span>
-            </div>
+            <div class="project-desc">Leading a team project on a hyperlocal booking marketplace, integrating frontend, backend, and APIs.</div>
           </div>
 
           <div class="project">
@@ -224,22 +197,7 @@
               <div class="project-status status-complete">Completed</div>
             </div>
             <div class="project-tech">Node.js · Express · MongoDB</div>
-            <div class="project-desc">Full e-commerce application with bcrypt authentication, file uploads, WebSocket, and QR features.</div>
-            <div class="project-tags">
-              <span>Auth</span><span>WebSocket</span><span>MongoDB</span>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="project-header">
-              <div class="project-title">PC Build Configurator API</div>
-              <div class="project-status status-complete">Completed</div>
-            </div>
-            <div class="project-tech">C# · Web API 2 · SQL Server</div>
-            <div class="project-desc">Backend API with Component/PCBuildRequest relational schema. Tested end-to-end in Postman with full CRUD.</div>
-            <div class="project-tags">
-              <span>REST API</span><span>Postman</span>
-            </div>
+            <div class="project-desc">Full e-commerce application with bcrypt authentication, WebSocket, and QR features.</div>
           </div>
 
           <div class="project">
@@ -248,40 +206,11 @@
               <div class="project-status status-complete">Completed</div>
             </div>
             <div class="project-tech">C# · EF Core · Token Auth</div>
-            <div class="project-desc">Token-based authentication API with full CRUD across text, numeric, date, and relational data types.</div>
-            <div class="project-tags">
-              <span>Token Auth</span><span>Master-Detail</span>
-            </div>
+            <div class="project-desc">Token-based authentication API with full CRUD operations across multiple data types.</div>
           </div>
-
-          <div class="project">
-            <div class="project-header">
-              <div class="project-title">Electronics Inventory Tracking</div>
-              <div class="project-status status-complete">Completed</div>
-            </div>
-            <div class="project-tech">C# · WinForms · Crystal Reports</div>
-            <div class="project-desc">Desktop application with master-detail structure, ADO.NET, and Crystal Reports with subreports and formula fields.</div>
-            <div class="project-tags">
-              <span>WinForms</span><span>ADO.NET</span>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="project-header">
-              <div class="project-title">Power Plant Generation DB</div>
-              <div class="project-status status-complete">Completed</div>
-            </div>
-            <div class="project-tech">SQL Server · DB Design</div>
-            <div class="project-desc">Designed a highly normalized relational database for monthly power plant generation across fiscal-year periods.</div>
-            <div class="project-tags">
-              <span>Normalization</span><span>SQL</span>
-            </div>
-          </div>
-
         </div>
       </div>
-
-    </main>
+    </div>
 
   </div>
 
