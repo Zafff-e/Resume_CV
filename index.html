@@ -9,7 +9,14 @@
 </head>
 <body>
 
-  <div class="cv-page" id="cv">
+  <!-- Animated Background -->
+  <div class="animated-bg">
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+  </div>
+
+  <div class="cv-page glassmorphism" id="cv">
     <!-- ================================================================
          SIDEBAR
          ================================================================ -->
@@ -518,16 +525,13 @@
 
   <!-- Floating Action Buttons -->
   <div class="action-bar">
-    <button class="action-btn action-btn--theme" id="themeToggle" title="Toggle dark mode">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      <span>Dark Mode</span>
-    </button>
     <button class="action-btn action-btn--print" id="printBtn" title="Print / Save as PDF">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
       <span>Print CV</span>
     </button>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

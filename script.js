@@ -153,6 +153,19 @@
   });
 
   // ==========================================================================
+  // VANILLA TILT 3D EFFECT
+  // ==========================================================================
+  if (typeof VanillaTilt !== 'undefined') {
+    VanillaTilt.init(document.querySelectorAll(".project-card, .timeline-item, .education-item, .training-card, .profile__photo-wrapper"), {
+      max: 5,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.15,
+      scale: 1.02
+    });
+  }
+
+  // ==========================================================================
   // HOVER RIPPLE EFFECT for project cards
   // ==========================================================================
   const cards = document.querySelectorAll('.project-card, .timeline-item, .education-item');
