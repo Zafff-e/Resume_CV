@@ -2,7 +2,7 @@
 %“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 7 0 R /F4 8 0 R
+/F1 2 0 R /F2 3 0 R /F3 8 0 R /F4 9 0 R /F5 14 0 R
 >>
 endobj
 2 0 obj
@@ -19,36 +19,76 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (mailto:ahmzafirhasan@gmail.com)
->> /Border [ 0 0 0 ] /Rect [ 220.1338 763.7898 317.1658 773.3898 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 329.0846 770.6498 422.4779 779.8898 ] /Subtype /Link /Type /Annot
 >>
 endobj
 5 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://github.com/Zafff-e)
->> /Border [ 0 0 0 ] /Rect [ 328.8618 763.7898 393.3338 773.3898 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://zafff-e.github.io)
+>> /Border [ 0 0 0 ] /Rect [ 136.188 759.1498 225.1923 768.3898 ] /Subtype /Link /Type /Annot
 >>
 endobj
 6 0 obj
 <<
 /A <<
-/S /URI /Type /Action /URI (https://linkedin.com/in/zafir-hasan-developer)
->> /Border [ 0 0 0 ] /Rect [ 405.0298 763.7898 537.5178 773.3898 ] /Subtype /Link /Type /Annot
+/S /URI /Type /Action /URI (https://github.com/Zafff-e)
+>> /Border [ 0 0 0 ] /Rect [ 236.4497 759.1498 328.8728 768.3898 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
-/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+/A <<
+/S /URI /Type /Action /URI (https://linkedin.com/in/zafir-hasan-developer)
+>> /Border [ 0 0 0 ] /Rect [ 340.1302 759.1498 459.0875 768.3898 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
 <<
-/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
 >>
 endobj
 9 0 obj
 <<
-/Annots [ 4 0 R 5 0 R 6 0 R ] /Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/BaseFont /ZapfDingbats /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Zafff-e)
+>> /Border [ 0 0 0 ] /Rect [ 523.0362 636.3148 557.1378 646.8148 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Zafff-e/AspNetCore-ProductCatalog-MVC)
+>> /Border [ 0 0 0 ] /Rect [ 523.0362 553.3148 557.1378 563.8148 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Zafff-e)
+>> /Border [ 0 0 0 ] /Rect [ 523.0362 470.3148 557.1378 480.8148 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Zafff-e/-Power-Plant-Operations-Reporting-Database.)
+>> /Border [ 0 0 0 ] /Rect [ 523.0362 408.3148 557.1378 418.8148 ] /Subtype /Link /Type /Annot
+>>
+endobj
+14 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+15 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 10 0 R 11 0 R 12 0 R 13 0 R ] /Contents 19 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 18 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 
   /Trans <<
@@ -56,55 +96,622 @@ endobj
 >> /Type /Page
 >>
 endobj
-10 0 obj
+16 0 obj
 <<
-/PageMode /UseNone /Pages 12 0 R /Type /Catalog
+/PageMode /UseNone /Pages 18 0 R /Type /Catalog
 >>
 endobj
-11 0 obj
+17 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20260930150906+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260930150906+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+/Author (\(anonymous\)) /CreationDate (D:20261008175428+06'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261008175428+06'00') /Producer (ReportLab PDF Library - \(opensource\)) 
   /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
 >>
 endobj
-12 0 obj
+18 0 obj
 <<
-/Count 1 /Kids [ 9 0 R ] /Type /Pages
+/Count 1 /Kids [ 15 0 R ] /Type /Pages
 >>
 endobj
-13 0 obj
+19 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 4381
+/Length 14187
 >>
 stream
-Gb!#_?$"c1P(!).kc1V&.=3@1r0DM4<gMiL\[&>>b2h,*^VD*?@8$_B!48r-p;_)/p`\q?MOdVaRg3.08[*3]IJS$f[\4(7Yg(KB"ZW!h`sWi&#NcDu4j/KR"@i!H5>I)_D"&DMqd%D4om77H-\%Xg?-fq7&1lT-]DWdQ:>#5d4cmjNZ["PfrcDS?_T*#hm%3>!n;`LC-X[1-bI)sDFC?4XCN+P&ruPF(DrG^j)dIlCq<p$;0Bd6/2O^7c3Vfsl=0G][[='LrX^8p+d.;+YSAJ[[p\J0.f3kX;\Si4532OUmd'@Md2#-(rA-0+5@/*MW+8n*dge:5ICTEr6mPR%I?Sjf_/A!fdb;KTBZ[F@r_\*U:`\/]O!IJL_jb,eC[D?n.5Hm9)%Kdg6&mFHKnj(oJ7ee_^0i]_(@rpt]%`@9>^d!.Y0%cj6K("!CK^QRDbjR/d*a#r9cm#O_:U4AK724_\ZV1ZuX@T/L^-a6\C@EOuX8F$ZqtP*8==cN*39)?E5L>d;1G[u4bmZXF$D!PJdR7VFY#i#fqqb?GHhGhS>RIQ]]rJSS:FA&JIPHk#5FlcbF:(2aETdYSK`l"7hWf58n'-DtS@\94':B^:'55W\_oqB9E%ljr5KAu0XIB.F$+oNUqr>U%W_*$"Y1n09$J`@*#@N7Gm0ESk:Wa+tgC8K@3'h%dGcb2q_pDD-D=n*9FeKmZ^:uUW9Q8`4#N=`j7?Ca;3?H$QFMj[TQ@gTs`_4[4?paWD-VLK=qaEbdDr](q&,?:efTe1VIBCiVOj##k1(AH0d4G(5h1mo4^.d67r8g@']$U%"pW1guOFh8j@lQ-Y,,JNd7\X>0&WjN!,gpNHn7A1&fnQ1k1VkNl0Ta\>Bc?5@dPf;d?R?JaA4^3kAI49NAqDPCCX&`/]+5-C$Q[DS12:GIH9fhP@5&^Oa)`0&56>0C,,Wr[WXYa'A<JER52VB4o0o7d2gTBNC?&),F%r"L^]\k`ca0,,O8le[TVm45pG3CE:ot5Ck4c"WO^U=!RbSQFEResQc`Ul!$J/b\ATIP(0SU$@Ne$('Mkj0YTeYV97cbk[D7C4+.F-8^%mnZ%gsX-V7hV1X/".*\(,@0Bqm/W>]tQJiHX:B>7g<r],__rM&^@[L%rB2+@2.P5EqUA\HWG(6)Z)DCgt_p),MfnmN,hX&QqFWJ,Y].`_HlKiAr<aG9+Ea0F(:iI2d$L0oI<jX32_Wc3D>:\<174/qJD%uB0n=)jE%r%;!WLXKB(4q"6D5Xoa6-DgDmu?O5tAZ&$1BC=kt=+_I/=$=]2D*"LDa;C&/hkGdS-e!l''S?jtqGHrqZR8[Vt^\Ukb<Xf0ZZi1K#7UmYhBfnQOidB$h!KhK;C`-aW`G6UYoKko>^!XJ5%D6%kk4Qf$VkT.Q/jRHY$pZK=6FQ-(i\)A"LQh`f"[E^&VdE8+;]iCGZ@LBU:OjPP1Si.<UVZ[)D$$K&YiX2UQ)bF.J!6;^q*"9$TLt39p\n_cSbU(4iI[cb!GGb1I=,I0A;[^h:96Re<4o_fQSD@Go^C>'N0Y76?^)i8Oa4HqkH@,7/1n5XeMa=i(/B<dQ(B%Rl)#i'#0`ZEYRlFGuf0t>\H-)RGX)%5r@+6'O1o2t%0MR@0#arR0(A5_g$b%2B5lIuIJ_.GFSXI5cCS#0kCK4O-`Ad3:gWPc.[S?_d>&IXEk"4!hBbEQOD]lfuX/,E*L]#]k"ncVI?OAor]<;:E0sD8$'KTZ.rd&Jgj+<Jq9LrY9OGXl$-/=hj/QWdij\jXI<36Cq2AW+$WIAoh%4oa:MR81l<-epDJFYZ5N,&S)+X'od!m1,XYd7bk2Io_(q&7@qL968FP),rLK3F*__gs$V2.19)Ltag!*^`?FW["`e:"U\UcQHal-&rm@Kp/eP"fLhBQLbbU^Ci7qBFM/%El83I;+euu0%U.sdKPo#7o[1/&nMWiBs#0oecG2B?PSI+B`VoeD@@;C8.lgYbjI[m$7S?u9B0m-1Fc+jiu2CV,t\Q%"iWfc'U0r3:f/Tm(0*mH`n'Q8lIb-,40G*6`h7"09=j4hnAOs6(Wcl&CnR+,V4N@!@7:lB3O;0^SOd^EXE3$t^rk)V`k-kA'b;6:^^uTl,TY--"08CQ\!J8a@\RSq+cfU."f&>ZV2RMaK#Hq9T_gV1qpL2M%i\[A?.-^RF%0^b,-2_)=H_%@K-H:I3"t9PJ\NE"Ja+d0&Ue0g5jg@7D:ZaK8l?Lh9PM?-hiKWV/+C^CXPUOX1"J9(ar"H7h*Tl1eFP9lK`EWmVLKo+N'tQ;:j&'p.#B**A]\8AC/Vf]._M<3LiT=\8gW8ZCL1cJngVJ?EF)1TN.al^7og9"JgGLZ"m$0e"bRUN<qm=GBV[Jq:KYFK39NhO/P1Wl,U63nLh4Nc7)gAs/9s]+j`-mN9Jaf#L+FL<f@*D"-VJhPY:+)V>$4pR+S[SKT:#U[#kVDm%K2D[ZU_UMod2?1'P*op&!Dh5pM1cCP)AEZZKSo^at1lEj;E\&_Q^*l'&OFuBi9Tr-"`"j`[AZ2g+\mgXm=BIl6!EBFOAt/NKeS3!FG"2LKAe&57G[LXI<roF^;=Gj-G>!da1/3Q[Wu/*q:Q:PY)kG['JM]K2l''6V<T?Z4g/2=Am8(Wa4$WqB$X;-GUgVC-Y]7hL7V+LdVnVES4LLNe0S(RG1E:N4<Kr)(m1+l'%2>#D9n\qc<2FaW$4fSISC<hUXYU8;`($=!NsC"VHUP=*(i9X@]Q`\mMd#rHElZ1fYGnc;9O7;/%/a<qYis7*k$T9bKkSN+A/PAV-reD=<80W?L*<1N)D82@88pB;X[F8uup@L/4&#DH?LL2g!(Z\Rp?O[F&P;qLOBJra$%4c`XM1XV/V_]pCV_?/KO9V&_dV$A2'lbKK$)NPW<BBGOqi4d<o'f#G()+2RV"H%sNoqJs:).FjSMR,s;PCtGJ@S0jo$ZZUVqMN8rP"Y].k-R"Zj(lra7,pN_pN(.V\mG8hC'rUf#pcA\#F%NmY%M"IaP,IsmNL>rm=KO"%$EG>T-KWl>0?PKVc[6mHKMZ9DV*mLs>R3p+WVo)SX!61q^)EnV'NRc@-kTHI&fbO'6^%[!XoNkqa`g#@l^l8m-/785DQ.u5"d:c(JM6a/Tf)\uFEBSc>n9GE$L>stq<_R;4hgo;d)aI$jfobX:9X]S(#N,aT68H!ZdC]KcZ-9^,XeXIbN`AqRO\m\j@g5$[Qnn.A[SW?':,pn2e*Z_DQm`k?/"md.r\)n/"#d*B1b?$%SkU^i6H<DQqF@sRf]/CTSJo^$%'pnIiD[?9tG5%\>D$F9Mq16Kmk5/ekukXE%VHGL:\5hHud1I.@>SH*1IQ'/5&B'%d_c3f"Sr[Npm!I*adZ,Bgu)sOu=YdEK[2f'N*7JgK-1JV)():CTV@7nnQ`H_Bg\$/^Ktb[l4/m=_i*YDtqNA#-AX1W=d/i]-a#.,+%^[^:DhsocD<%o*8FJELi_jC<gjcBZO"+1@,@9&jKii8'b9s2_oNDTSj:JgZ7lSXd@l)Ad<p(oRNqnrh>:K.ZCeb(q(5r4/$R/#%i@bF2=Y%H_m!<p^W>?^"K>rC-6S3cFl51iWKVpgsb4+&^0@h0JiQ;@ri>/C(:?B7)XnY5>'2'BD$]9#H?DE(Y!h-,:)Plc-=L1%s#!nmqmAqGcJ)AgHS'5(5MD=Z7!T#7e2SuM;A>KT'nBcl9*7C`6&S_PJfEuc[kV?,df3#[HK1#:..O"bs$3^J$[=&)BHYIV%Q@+][\k.''-U_l0>Yn)Q&R>0F[=)qL%&30X-0V]'g79=%'>b1f''r.cWD&d-*Mj8bZi%@+"gEjdQ@g[nmD1TLQ2E5e*K]pciC3#`V[l"TkjI$YeMlK,5K.8*E2K7?WaZ;/EY-%LlI[WjBdWg!1cJ6pbMJ#1G.]D2P&:7"K<?4;Sk=$\c5;F@4^HrLCI6N9M9*+_8g,\al1)ZgG@X2:CiN]u@a6!+C!KFZ>bLDsC9\Hd-R-N=O(XCC/a%]>?X`k#[St]F*,m=F`EcNW*ci*Nj'",^qno`.Q+Y:dc/ZF(W[uR0Aph%hr$_-k]d\/5kr#S\/QXZMSRc:3Q@Z7p[fJ+a%P$Wh.6GdAXp>aI8f5<n^fo3;SdOe4Kj&*K&lo!t7Q9?F=3OGJ/VJ%D<;t.Lc;`f!<:'Vc#('/RrVL'ibu8=P%)e3CC76H%2ZIf68gE>Q(f5QE.Ec26S"jZf5mp.`@D9B,bg/-!X;"-&_=>:H.RK`p&t@(%,\7Zr/nqQ_8<CU)^1JWn04@kcUhup[hI9Aad5ljH+=4\<.`Zr'%q!QdJE]"HNrM_2fl`eKoU2jg&jQ9=A)6s+Ejna$`,/O@if#*O.bH3?'#S!urZ,+L$<F':l:3MA2t(]=!\X#2=/q3;Gf)@XiM~>endstream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 38 794.8898 cm
+q
+.043137 .145098 .270588 rg
+BT 1 0 0 1 0 3 Tm /F2 18 Tf 21 TL 175.6498 0 Td (AHM ZAFIR HASAN) Tj T* -175.6498 0 Td ET
+Q
+Q
+q
+1 0 0 1 38 793.3898 cm
+Q
+q
+1 0 0 1 38 781.8898 cm
+q
+BT 1 0 0 1 0 2.7 Tm 151.2658 0 Td 11.5 TL /F2 8.8 Tf .07451 .25098 .454902 rg (FULL-STACK DEVELOPER \177 .NET & WEB SYSTEMS) Tj T* -151.2658 0 Td ET
+Q
+Q
+q
+1 0 0 1 38 779.8898 cm
+Q
+q
+1 0 0 1 38 769.3898 cm
+q
+BT 1 0 0 1 0 2.8 Tm 134.7977 0 Td 10.5 TL /F1 7.7 Tf .278431 .333333 .411765 rg (Dhaka, Bangladesh  ) Tj (\177) Tj (  +880 1747 544 273  ) Tj (\177) Tj (  ) Tj .007843 .517647 .780392 rg (ahmzafirhasan@gmail.com) Tj T* -134.7977 0 Td ET
+Q
+Q
+q
+1 0 0 1 38 768.3898 cm
+Q
+q
+1 0 0 1 38 757.8898 cm
+q
+BT 1 0 0 1 0 2.8 Tm 98.18805 0 Td 10.5 TL /F2 7.7 Tf .007843 .517647 .780392 rg (Portfolio:) Tj /F1 7.7 Tf ( zafff-e.github.io) Tj .278431 .333333 .411765 rg (  ) Tj (\177) Tj (  ) Tj /F2 7.7 Tf .007843 .517647 .780392 rg (GitHub:) Tj /F1 7.7 Tf ( github.com/Zafff-e) Tj .278431 .333333 .411765 rg (  ) Tj (\177) Tj (  ) Tj /F2 7.7 Tf .007843 .517647 .780392 rg (LinkedIn:) Tj /F1 7.7 Tf ( in/zafir-hasan-developer) Tj T* -98.18805 0 Td ET
+Q
+Q
+q
+1 0 0 1 38 754.8898 cm
+Q
+q
+1 0 0 1 38 753.6898 cm
+q
+1.2 w
+1 J
+.043137 .145098 .270588 RG
+n 0 0 m 519.2756 0 l S
+Q
+Q
+q
+1 0 0 1 38 738.6898 cm
+q
+.043137 .145098 .270588 rg
+BT 1 0 0 1 0 2.3 Tm /F2 9.2 Tf 11.5 TL (TECHNICAL SKILLS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 737.0898 cm
+q
+.6 w
+1 J
+.796078 .835294 .882353 RG
+n 0 0 m 519.2756 0 l S
+Q
+Q
+q
+1 0 0 1 32.1378 666.4898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 0 56.75 cm
+q
+BT 1 0 0 1 0 2.8 Tm 10.8 TL /F2 8 Tf .058824 .090196 .164706 rg (\177 Languages:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 135 56.75 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 2.8 Tm /F1 8 Tf 10.8 TL (C#, JavaScript \(ES6+\), TypeScript, SQL, HTML5, CSS3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 45.45 cm
+q
+BT 1 0 0 1 0 2.8 Tm 10.8 TL /F2 8 Tf .058824 .090196 .164706 rg (\177 Backend & Web APIs:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 135 45.45 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 2.8 Tm /F1 8 Tf 10.8 TL (ASP.NET Core \(.NET 9\), ASP.NET MVC 5, Node.js, Express.js, RESTful Web APIs, WebSockets) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 34.15 cm
+q
+BT 1 0 0 1 0 2.8 Tm 10.8 TL /F2 8 Tf .058824 .090196 .164706 rg (\177 Databases & ORM:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 135 34.15 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 2.8 Tm /F1 8 Tf 10.8 TL (Microsoft SQL Server \(T-SQL\), MongoDB, Entity Framework Core, Mongoose, 3NF Normalization) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 22.85 cm
+q
+BT 1 0 0 1 0 2.8 Tm 10.8 TL /F2 8 Tf .058824 .090196 .164706 rg (\177 Frontend Development:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 135 22.85 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 2.8 Tm /F1 8 Tf 10.8 TL (React 19, Angular, Component Architecture, Single Page Applications \(SPA\), Tailwind CSS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 11.55 cm
+q
+BT 1 0 0 1 0 2.8 Tm 10.8 TL /F2 8 Tf .058824 .090196 .164706 rg (\177 Architecture & Security:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 135 11.55 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 2.8 Tm /F1 8 Tf 10.8 TL (Master-Detail Systems, Repository Pattern, DTOs, JWT Bearer Auth, bcrypt Hashing, CORS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 0 .25 cm
+q
+BT 1 0 0 1 0 2.8 Tm 10.8 TL /F2 8 Tf .058824 .090196 .164706 rg (\177 Tools & Cloud:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 135 .25 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 2.8 Tm /F1 8 Tf 10.8 TL (Git, GitHub \(Branching, PRs, Code Reviews\), Postman \(API Testing\), Microsoft Azure, VS Code, CI/CD) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 663.9898 cm
+Q
+q
+1 0 0 1 38 652.4898 cm
+q
+.043137 .145098 .270588 rg
+BT 1 0 0 1 0 2.3 Tm /F2 9.2 Tf 11.5 TL (SOFTWARE ENGINEERING PROJECTS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 650.8898 cm
+q
+.6 w
+1 J
+.796078 .835294 .882353 RG
+n 0 0 m 519.2756 0 l S
+Q
+Q
+q
+1 0 0 1 32.1378 631.0898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (TechNova E-Commerce Platform | ) Tj /F3 8.4 Tf .278431 .333333 .411765 rg (Node.js, Express.js, MongoDB, WebSockets, bcrypt) Tj T* ET
+Q
+Q
+q
+1 0 0 1 461 3.5 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 2.7 Tm /F2 7.8 Tf 10.5 TL 29.8984 0 Td (GitHub ) Tj /F4 7.8 Tf 10.5 TL (n) Tj /F2 7.8 Tf 10.5 TL T* -29.8984 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 630.4898 cm
+Q
+q
+1 0 0 1 38 609.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Architected a modular backend using ) Tj /F2 7.85 Tf (Node.js & Express.js) Tj /F1 7.85 Tf (, deploying 12+ RESTful endpoints for user auth, product catalogs, shopping cart) Tj T* 6 0 Td (sessions, and cash-on-delivery order processing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 588.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Modeled normalized document schemas and references using ) Tj /F2 7.85 Tf (MongoDB & Mongoose) Tj /F1 7.85 Tf (; integrated ) Tj /F2 7.85 Tf (WebSockets) Tj /F1 7.85 Tf ( for real-time inventory level) Tj T* 6 0 Td (updates without client polling.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 567.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Enforced secure password protection via ) Tj /F2 7.85 Tf (bcrypt) Tj /F1 7.85 Tf ( hashing and session tokens; automated transactional order validation and dynamic invoice) Tj T* 6 0 Td (tracking.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 565.0898 cm
+Q
+q
+1 0 0 1 32.1378 548.0898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (Product Catalog & Master-Detail System | ) Tj /F3 8.4 Tf .278431 .333333 .411765 rg (C#, ASP.NET Core \(.NET 9\), EF Core, SQL Server, React 19) Tj T* ET
+Q
+Q
+q
+1 0 0 1 461 3.5 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 2.7 Tm /F2 7.8 Tf 10.5 TL 29.8984 0 Td (GitHub ) Tj /F4 7.8 Tf 10.5 TL (n) Tj /F2 7.8 Tf 10.5 TL T* -29.8984 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 547.4898 cm
+Q
+q
+1 0 0 1 38 526.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Engineered high-throughput RESTful Web APIs handling normalized Category-Product-Brand master-detail CRUD hierarchies, utilizing EF Core) Tj T* 6 0 Td (Code-First migrations and DTO contracts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 505.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Developed dual frontend clients: Angular client with dynamic child brand insertions, and React 19 client featuring instant search filtering and dual) Tj T* 6 0 Td (Grid/Table view modes.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 484.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Implemented memory-safe multipart image streaming with GUID file naming to prevent server collisions, coupled with zero-latency client-side) Tj T* 6 0 Td (thumbnail previews.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 482.0898 cm
+Q
+q
+1 0 0 1 32.1378 465.0898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (Skill-Commerce Booking Marketplace | ) Tj /F3 8.4 Tf .278431 .333333 .411765 rg (C#, ASP.NET Core, Angular, SQL Server, REST API Architecture) Tj T* ET
+Q
+Q
+q
+1 0 0 1 461 3.5 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 2.7 Tm /F2 7.8 Tf 10.5 TL 29.8984 0 Td (GitHub ) Tj /F4 7.8 Tf 10.5 TL (n) Tj /F2 7.8 Tf 10.5 TL T* -29.8984 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 464.4898 cm
+Q
+q
+1 0 0 1 38 443.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td -0.00777 Tw 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Serving as backend and database lead on team capstone designing ) Tj /F2 7.85 Tf (RESTful API services) Tj /F1 7.85 Tf ( for customer bookings, provider scheduling, and profile) Tj T* 0 Tw 6 0 Td (management.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 422.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Established API contracts, led daily standups, and managed the team repository on ) Tj /F2 7.85 Tf (Git/GitHub) Tj /F1 7.85 Tf ( with active branch protection and peer code) Tj T* 6 0 Td (reviews.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 420.0898 cm
+Q
+q
+1 0 0 1 32.1378 403.0898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (Power Plant Operations Database Architecture | ) Tj /F3 8.4 Tf .278431 .333333 .411765 rg (Microsoft SQL Server, Relational Design \(3NF\), T-SQL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 461 3.5 cm
+q
+.007843 .517647 .780392 rg
+BT 1 0 0 1 0 2.7 Tm /F2 7.8 Tf 10.5 TL 29.8984 0 Td (GitHub ) Tj /F4 7.8 Tf 10.5 TL (n) Tj /F2 7.8 Tf 10.5 TL T* -29.8984 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 402.4898 cm
+Q
+q
+1 0 0 1 38 381.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Designed a normalized 3NF relational database schema across 12+ tables modeling monthly power generation metrics, plant operations, and fuel) Tj T* 6 0 Td (types from industrial records.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 360.4898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Transformed raw operational spreadsheets into structured SQL tables, enforcing primary/foreign keys, referential integrity, and indexed queries for) Tj T* 6 0 Td (high-speed reporting.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 357.9898 cm
+Q
+q
+1 0 0 1 38 346.4898 cm
+q
+BT 1 0 0 1 0 2.3 Tm 11.5 TL /F2 9.2 Tf .043137 .145098 .270588 rg (EXPERIENCE & TECHNICAL TRAINING) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 344.8898 cm
+q
+.6 w
+1 J
+.796078 .835294 .882353 RG
+n 0 0 m 519.2756 0 l S
+Q
+Q
+q
+1 0 0 1 32.1378 325.0898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (IsDB-BISEW IT Scholarship Programme | ) Tj .278431 .333333 .411765 rg (Star Computer Systems Limited \(SCSL\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 406 3.5 cm
+q
+BT 1 0 0 1 0 2.7 Tm 51.3584 0 Td 10.5 TL /F1 7.8 Tf .278431 .333333 .411765 rg (Jan 2026 \226 Present) Tj T* -51.3584 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 314.5898 cm
+q
+.278431 .333333 .411765 rg
+BT 1 0 0 1 0 2.7 Tm /F5 7.8 Tf 10.5 TL (Enterprise Software Engineering Trainee \(Intensive 9-Month Full-Time Diploma, Round 70\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 314.0898 cm
+Q
+q
+1 0 0 1 38 293.0898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Selected for prestigious, fully-funded enterprise software engineering scholarship; completed 1,000+ hours of rigorous backend and full-stack) Tj T* 6 0 Td (software development.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 272.0898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Built and deployed 8+ enterprise applications spanning ) Tj /F2 7.85 Tf (Database Design & Implementation \(MS SQL Server\)) Tj /F1 7.85 Tf (, ) Tj /F2 7.85 Tf (C# / ASP.NET Core Web APIs) Tj T* 6 0 Td (\(.NET 9\)) Tj /F1 7.85 Tf (, ) Tj /F2 7.85 Tf (Entity Framework Core) Tj /F1 7.85 Tf (, and ) Tj /F2 7.85 Tf (Cloud Services \(Azure\)) Tj /F1 7.85 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 270.0898 cm
+Q
+q
+1 0 0 1 32.1378 253.0898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (Headless Technology | ) Tj .278431 .333333 .411765 rg (Web Development & IT Associate) Tj T* ET
+Q
+Q
+q
+1 0 0 1 406 3.5 cm
+q
+BT 1 0 0 1 0 2.7 Tm 44.8532 0 Td 10.5 TL /F1 7.8 Tf .278431 .333333 .411765 rg (Jan 2019 \226 Dec 2020) Tj T* -44.8532 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 252.5898 cm
+Q
+q
+1 0 0 1 38 231.5898 cm
+q
+BT 1 0 0 1 10 13.15 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Developed and maintained web applications and supported IT infrastructure; managed database updates and implemented technical solutions for) Tj T* 6 0 Td (client workflows.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 229.5898 cm
+Q
+q
+1 0 0 1 32.1378 212.5898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (Marico Bangladesh Limited | ) Tj .278431 .333333 .411765 rg (Management Trainee Officer) Tj T* ET
+Q
+Q
+q
+1 0 0 1 406 3.5 cm
+q
+BT 1 0 0 1 0 2.7 Tm 45.2822 0 Td 10.5 TL /F1 7.8 Tf .278431 .333333 .411765 rg (Jan 2021 \226 Feb 2022) Tj T* -45.2822 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 212.0898 cm
+Q
+q
+1 0 0 1 38 201.5898 cm
+q
+BT 1 0 0 1 10 2.65 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Collaborated with commercial teams to analyze market performance data, evaluate distribution metrics, and prepare quantitative executive reports.) Tj T* 6 0 Td ET
+Q
+Q
+q
+1 0 0 1 38 199.0898 cm
+Q
+q
+1 0 0 1 38 187.5898 cm
+q
+BT 1 0 0 1 0 2.3 Tm 11.5 TL /F2 9.2 Tf .043137 .145098 .270588 rg (EDUCATION & QUALIFICATIONS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38 185.9898 cm
+q
+.6 w
+1 J
+.796078 .835294 .882353 RG
+n 0 0 m 519.2756 0 l S
+Q
+Q
+q
+1 0 0 1 32.1378 166.1898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (IsDB-BISEW IT Scholarship \227 Professional Diploma in Enterprise Systems Development \(C# .NET\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436 3.5 cm
+q
+.278431 .333333 .411765 rg
+BT 1 0 0 1 0 2.7 Tm /F1 7.8 Tf 10.5 TL 71.6528 0 Td (2026) Tj T* -71.6528 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 164.9898 cm
+Q
+q
+1 0 0 1 32.1378 147.9898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.6 Tm 11 TL /F2 8.4 Tf .058824 .090196 .164706 rg (University of Dhaka \227 Bachelor of Social Sciences \(B.S.S. Hons\) in Economics) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436 3.5 cm
+q
+BT 1 0 0 1 0 2.7 Tm 45.632 0 Td 10.5 TL /F1 7.8 Tf .278431 .333333 .411765 rg (2014 \226 2019) Tj T* -45.632 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 38 137.4898 cm
+q
+BT 1 0 0 1 10 2.65 Tm -6 0 Td 10.5 TL /F1 7.85 Tf .058824 .090196 .164706 rg (\177 Quantitative foundation in Econometrics, Mathematical Statistics, and Analytical Data Modeling.) Tj T* 6 0 Td ET
+Q
+Q
+q
+1 0 0 1 38 135.9898 cm
+Q
+q
+1 0 0 1 32.1378 119.4898 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+BT 1 0 0 1 0 2.7 Tm 10.5 TL /F2 7.8 Tf .278431 .333333 .411765 rg (Certifications & Languages:) Tj /F1 7.8 Tf ( ) Tj /F2 7.8 Tf (IELTS Band 7.5) Tj /F1 7.8 Tf ( \(CEFR C1 \227 Proficient\) \177 Bengali \(Native\) \177 HSC \(CPSCR\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 436 3 cm
+q
+.278431 .333333 .411765 rg
+BT 1 0 0 1 0 2.7 Tm /F1 7.8 Tf 10.5 TL 37.8554 0 Td (Proficient User) Tj T* -37.8554 0 Td ET
+Q
+Q
+q
+Q
+Q
+Q
+ 
+endstream
 endobj
 xref
-0 14
+0 20
 0000000000 65535 f 
 0000000061 00000 n 
-0000000122 00000 n 
-0000000229 00000 n 
-0000000341 00000 n 
-0000000523 00000 n 
-0000000701 00000 n 
-0000000898 00000 n 
-0000001017 00000 n 
-0000001132 00000 n 
-0000001367 00000 n 
-0000001437 00000 n 
-0000001718 00000 n 
-0000001778 00000 n 
+0000000133 00000 n 
+0000000240 00000 n 
+0000000352 00000 n 
+0000000534 00000 n 
+0000000710 00000 n 
+0000000888 00000 n 
+0000001085 00000 n 
+0000001204 00000 n 
+0000001287 00000 n 
+0000001466 00000 n 
+0000001675 00000 n 
+0000001854 00000 n 
+0000002077 00000 n 
+0000002193 00000 n 
+0000002463 00000 n 
+0000002533 00000 n 
+0000002814 00000 n 
+0000002875 00000 n 
 trailer
 <<
 /ID 
-[<43200386cbc9afbf61e82273c6ff15ee><43200386cbc9afbf61e82273c6ff15ee>]
+[<3fc8ddc9ee6cbd7b93d2af071e726b78><3fc8ddc9ee6cbd7b93d2af071e726b78>]
 % ReportLab generated PDF document -- digest (opensource)
 
-/Info 11 0 R
-/Root 10 0 R
-/Size 14
+/Info 17 0 R
+/Root 16 0 R
+/Size 20
 >>
 startxref
-6251
+17115
 %%EOF
