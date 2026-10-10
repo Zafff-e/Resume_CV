@@ -164,7 +164,7 @@ def build_pdf(filename="resume.pdf"):
     # ==========================
     add_section_header("Professional Summary")
     story.append(Paragraph(
-        "Passionate and analytical aspiring Software Engineer focused on building reliable, scalable, and user-centric software solutions. Developing expertise in full-stack .NET development, RESTful APIs, database engineering, and modern frontend technologies through the IsDB-BISEW IT Scholarship Programme. Driven by continuous learning, emerging technologies, and solving real-world problems through software engineering, with a strong commitment to professional growth and meaningful contributions to technology-driven teams.",
+        "Passionate and analytical aspiring Software Developer focused on building reliable, scalable, and user-centric software solutions. Developing expertise in full-stack .NET development, RESTful APIs, database engineering, and modern frontend technologies through the IsDB-BISEW IT Scholarship Programme. Driven by continuous learning, emerging technologies, and solving real-world problems through software engineering, with a strong commitment to professional growth and meaningful contributions to technology-driven teams.",
         summary_style
     ))
     story.append(Spacer(1, 1.8))

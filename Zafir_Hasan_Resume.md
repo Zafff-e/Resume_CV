@@ -6,7 +6,7 @@ Dhaka, Bangladesh | +880 1747 544 273 | [ahmzafirhasan@gmail.com](mailto:ahmzafi
 ---
 
 ## PROFESSIONAL SUMMARY
-Passionate and analytical aspiring Software Engineer focused on building reliable, scalable, and user-centric software solutions. Developing expertise in full-stack .NET development, RESTful APIs, database engineering, and modern frontend technologies through the IsDB-BISEW IT Scholarship Programme. Driven by continuous learning, emerging technologies, and solving real-world problems through software engineering, with a strong commitment to professional growth and meaningful contributions to technology-driven teams.
+Passionate and analytical aspiring Software Developer focused on building reliable, scalable, and user-centric software solutions. Developing expertise in full-stack .NET development, RESTful APIs, database engineering, and modern frontend technologies through the IsDB-BISEW IT Scholarship Programme. Driven by continuous learning, emerging technologies, and solving real-world problems through software engineering, with a strong commitment to professional growth and meaningful contributions to technology-driven teams.
 
 ---
 
