@@ -6,7 +6,7 @@ Dhaka, Bangladesh | +880 1747 544 273 | [ahmzafirhasan@gmail.com](mailto:ahmzafi
 ---
 
 ## PROFESSIONAL SUMMARY
-High-impact **Full-Stack Software Developer** specializing in enterprise **.NET systems, cross-platform mobile apps, and modern web architectures**, honed through an intensive 9-month professional diploma via the prestigious **IsDB-BISEW IT Scholarship Programme**. Proven track record architecting robust RESTful Web APIs using **ASP.NET Core (.NET 9/8)**, co-developing high-traction production mobile applications in **Flutter & Dart with 10K+ Play Store downloads**, and designing high-performance relational databases (**SQL Server, PostgreSQL**). Combines hands-on mastery of enterprise design patterns (Repository, Factory, DTOs) and real-time WebSockets with an analytical foundation in Economics from the **University of Dhaka** and an **IELTS Band 7.5** English proficiency.
+Passionate and analytical aspiring Software Engineer focused on building reliable, scalable, and user-centric software solutions. Developing expertise in full-stack .NET development, RESTful APIs, database engineering, and modern frontend technologies through the IsDB-BISEW IT Scholarship Programme. Driven by continuous learning, emerging technologies, and solving real-world problems through software engineering, with a strong commitment to professional growth and meaningful contributions to technology-driven teams.
 
 ---
 

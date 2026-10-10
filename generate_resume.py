@@ -164,7 +164,7 @@ def build_pdf(filename="resume.pdf"):
     # ==========================
     add_section_header("Professional Summary")
     story.append(Paragraph(
-        "Results-driven <b>Junior Software Engineer / Full-Stack .NET Developer</b> with hands-on enterprise application development training via the prestigious <b>IsDB-BISEW IT Scholarship Programme</b> (Round 70, Trainee ID: 1294926). Proven expertise building high-performance RESTful Web APIs, scalable relational databases, and dynamic SPAs using <b>C#, ASP.NET Core (.NET 9/8), EF Core, SQL Server (T-SQL), React 19, and Angular</b>. Active contributor to a live production mobile app on <b>Google Play (10K+ downloads)</b>. Brings an analytical background with an Economics degree from the <b>University of Dhaka</b> and an <b>IELTS Band 7.5</b>.",
+        "Passionate and analytical aspiring Software Engineer focused on building reliable, scalable, and user-centric software solutions. Developing expertise in full-stack .NET development, RESTful APIs, database engineering, and modern frontend technologies through the IsDB-BISEW IT Scholarship Programme. Driven by continuous learning, emerging technologies, and solving real-world problems through software engineering, with a strong commitment to professional growth and meaningful contributions to technology-driven teams.",
         summary_style
     ))
     story.append(Spacer(1, 1.8))
