@@ -115,6 +115,30 @@ def build_modern_resume(pdf_path="AhmZafirHasan_Resume_Modern.pdf"):
         textColor=TEXT_MUTED
     )
 
+    project_link_style = ParagraphStyle(
+        'ProjLink',
+        parent=styles['Normal'],
+        fontName='Helvetica-Bold',
+        fontSize=8.0,
+        leading=11.8,
+        textColor=colors.HexColor('#0284C7'),
+        alignment=2
+    )
+
+    def project_header_table(title_markup, url, link_label):
+        row = [
+            Paragraph(f"<b>{title_markup}</b>", item_title_style),
+            Paragraph(f'<a href="{url}"><font color="#0284C7"><b>{link_label}</b></font></a>', project_link_style)
+        ]
+        t = Table([row], colWidths=[275, 80])
+        t.setStyle(TableStyle([
+            ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
+            ('PADDING', (0,0), (-1,-1), 0),
+            ('TOPPADDING', (0,0), (-1,-1), 0),
+            ('BOTTOMPADDING', (0,0), (-1,-1), 0),
+        ]))
+        return t
+
     bullet_style = ParagraphStyle(
         'Bullet',
         parent=styles['Normal'],
@@ -274,15 +298,23 @@ def build_modern_resume(pdf_path="AhmZafirHasan_Resume_Modern.pdf"):
     left.extend(section_header("Featured Projects"))
 
     # Candela
-    left.append(Paragraph("<b>Candela &mdash; HSC Physics &amp; Math Mobile App</b>", item_title_style))
-    left.append(Paragraph("Flutter, Dart, Mobile Architecture &bull; <font color='#0B2545'><b>10K+ Installs &bull; 4.6★ Google Play</b></font>", item_sub_style))
+    left.append(project_header_table(
+        "Candela &mdash; HSC Physics &amp; Math Mobile App",
+        "https://play.google.com/store/apps/details?id=com.polin.kawser.candela&amp;hl=en",
+        "Google Play ↗"
+    ))
+    left.append(Paragraph("Flutter, Dart, Mobile Architecture &bull; <font color='#0B2545'><b>10K+ Installs &bull; 4.6★</b></font>", item_sub_style))
     left.append(Spacer(1, 1.2))
     left.append(Paragraph("&bull; Contributed as co-developer to a production Android educational app live on Google Play Store with <b>10,000+ active installs</b> and a <b>4.6★ user rating across 570+ reviews</b>.", bullet_style))
     left.append(Paragraph("&bull; Structured core formula indexation, offline mathematical study modules, responsive mobile UI views, and optimized client navigation workflows.", bullet_style))
     left.append(Spacer(1, 6.5))
 
     # ProductCatalogSPA
-    left.append(Paragraph("<b>ProductCatalogSPA &amp; Product Management System</b>", item_title_style))
+    left.append(project_header_table(
+        "ProductCatalogSPA &amp; Product Management System",
+        "https://github.com/Zafff-e/AspNetCore-ProductCatalog-MVC",
+        "GitHub ↗"
+    ))
     left.append(Paragraph("C#, ASP.NET Core (.NET 9), EF Core, SQL Server, React 19, Angular", item_sub_style))
     left.append(Spacer(1, 1.2))
     left.append(Paragraph("&bull; Architected a high-throughput RESTful Web API with single-controller CRUD routing, normalized Category-Product-Brand relations, and automated database seeding (<font face='Courier' color='#0B2545'><b>EnsureCreated()</b></font>).", bullet_style))
@@ -290,7 +322,11 @@ def build_modern_resume(pdf_path="AhmZafirHasan_Resume_Modern.pdf"):
     left.append(Spacer(1, 6.5))
 
     # TechNova
-    left.append(Paragraph("<b>TechNova &mdash; Real-Time Tech Hardware E-Commerce</b>", item_title_style))
+    left.append(project_header_table(
+        "TechNova &mdash; Real-Time Tech Hardware E-Commerce",
+        "https://github.com/Zafff-e",
+        "GitHub ↗"
+    ))
     left.append(Paragraph("Node.js, Express.js, MongoDB (Mongoose), WebSockets, bcrypt", item_sub_style))
     left.append(Spacer(1, 1.2))
     left.append(Paragraph("&bull; Developed a full-stack e-commerce hardware store with product catalogs, shopping cart sessions, cash-on-delivery checkout, and normalized MongoDB document models.", bullet_style))
@@ -298,7 +334,11 @@ def build_modern_resume(pdf_path="AhmZafirHasan_Resume_Modern.pdf"):
     left.append(Spacer(1, 6.5))
 
     # Employee Master-Details
-    left.append(Paragraph("<b>Employee Master-Details Enterprise Management</b>", item_title_style))
+    left.append(project_header_table(
+        "Employee Master-Details Enterprise Management",
+        "https://github.com/Zafff-e",
+        "GitHub ↗"
+    ))
     left.append(Paragraph("ASP.NET Core Web API, EF Core, SQL Server, React 18, TypeScript", item_sub_style))
     left.append(Spacer(1, 1.2))
     left.append(Paragraph("&bull; Developed master-detail persistence resolving multipart payload constraints by combining binary image streams with client-serialized JSON strings (<font face='Courier' color='#0B2545'>EXperiencesString</font>).", bullet_style))
