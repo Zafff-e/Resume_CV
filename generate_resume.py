@@ -179,6 +179,7 @@ def build_pdf(filename="resume.pdf"):
         ("Databases & ORM", "Microsoft SQL Server (T-SQL, Stored Procs, TVPs, Transactions, Schemabound Views, UDFs, Indexing), EF Core, EF6, ADO.NET, MongoDB"),
         ("Frontend & Mobile", "React 19 / 18, TypeScript, JavaScript (ES6+), Angular (Standalone), Flutter/Dart, HTML5, CSS3, Bootstrap 5, Vite, Axios, EJS"),
         ("Architecture & Security", "3-Tier Architecture, Master-Detail Systems, Repository Pattern, Factory Pattern, DTOs, JWT Bearer, OWIN OAuth 2.0, bcrypt, CORS"),
+        ("Hardware & Systems", "Desktop & Laptop Hardware Diagnostics & Component Repair, Custom PC Rigs, Thermal Management, BIOS/UEFI Recovery"),
         ("Tools & Platforms", "Visual Studio 2022, VS Code, SSMS, Git, GitHub (Branching, PRs), Postman, Google Play Console, Swagger/OpenAPI, Azure")
     ]
     
@@ -286,16 +287,17 @@ def build_pdf(filename="resume.pdf"):
     story.append(Paragraph("&bull; Analyzed commercial KPIs, regional market trends, and distribution performance metrics; collaborated with cross-functional commercial teams to deliver quantitative executive presentations.", bullet_style))
     story.append(Spacer(1, 1.5))
 
-    # IT Instructor / Coordinator
+    # HSC ICT Instructor & Hardware Specialist
     inst_header = [
-        Paragraph("<b>IT Workshop Coordinator / ICT Instructor</b> &mdash; <i>Freelance / Community Initiatives, Dhaka</i>", entry_title_style),
-        Paragraph("<font color='#475569'>Prior Experience</font>", ParagraphStyle('R7', parent=entry_subtitle_style, alignment=2))
+        Paragraph("<b>HSC ICT Instructor &amp; Hardware Systems Specialist</b> &mdash; <i>Academic Mentorship &amp; Tech Services, Dhaka</i>", entry_title_style),
+        Paragraph("<font color='#475569'>Academic &amp; Hardware Track</font>", ParagraphStyle('R7', parent=entry_subtitle_style, alignment=2))
     ]
-    t_inst = Table([inst_header], colWidths=[424, 115])
+    t_inst = Table([inst_header], colWidths=[395, 144])
     t_inst.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(t_inst)
     story.append(Spacer(1, 0.3))
-    story.append(Paragraph("&bull; Instructed students and trainees in computer fundamentals, relational database logic, and productivity workflows.", bullet_style))
+    story.append(Paragraph("&bull; Taught national NCTB HSC ICT syllabus to college students: C programming syntax, relational SQL databases, Boolean logic gates, and web design fundamentals.", bullet_style))
+    story.append(Paragraph("&bull; Lifelong hardware mastery: component-level troubleshooting, repair, custom PC builds, thermal repasting, and BIOS/firmware restorations for laptops and desktops.", bullet_style))
     story.append(Spacer(1, 1.8))
 
     # ==========================
