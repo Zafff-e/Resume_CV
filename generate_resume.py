@@ -9,17 +9,15 @@ from reportlab.platypus import (
 
 def build_pdf(filename="resume.pdf"):
     # Target exact 1-page A4 (595.27 x 841.89 points)
-    # Margins: 32 pt (0.44 in) left/right, 20 pt top/bottom
-    # Printable width: 595.27 - 64 = 531.27 pt
-    # Printable height: 841.89 - 40 = 801.89 pt
+    # Margins: 30 pt left/right, 18 pt top/bottom
     # pageCompression=0 ensures maximum ATS plain-text parsing across all engines
     doc = SimpleDocTemplate(
         filename,
         pagesize=A4,
-        leftMargin=32,
-        rightMargin=32,
-        topMargin=20,
-        bottomMargin=20,
+        leftMargin=30,
+        rightMargin=30,
+        topMargin=18,
+        bottomMargin=18,
         pageCompression=0
     )
 
@@ -38,8 +36,8 @@ def build_pdf(filename="resume.pdf"):
         'DocName',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=18.0,
-        leading=21.0,
+        fontSize=17.5,
+        leading=20.5,
         textColor=PRIMARY,
         alignment=1 # Center
     )
@@ -48,8 +46,8 @@ def build_pdf(filename="resume.pdf"):
         'DocTitle',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=8.8,
-        leading=11.5,
+        fontSize=8.5,
+        leading=11.0,
         textColor=SECONDARY,
         alignment=1
     )
@@ -58,8 +56,8 @@ def build_pdf(filename="resume.pdf"):
         'ContactBar',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=7.7,
-        leading=10.5,
+        fontSize=7.5,
+        leading=10.0,
         textColor=TEXT_MUTED,
         alignment=1
     )
@@ -68,19 +66,29 @@ def build_pdf(filename="resume.pdf"):
         'SectionHeader',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=9.2,
-        leading=11.5,
+        fontSize=8.8,
+        leading=11.0,
         textColor=PRIMARY,
         spaceBefore=0,
         spaceAfter=0
+    )
+
+    summary_style = ParagraphStyle(
+        'DocSummary',
+        parent=styles['Normal'],
+        fontName='Helvetica',
+        fontSize=7.6,
+        leading=10.2,
+        textColor=TEXT_DARK,
+        alignment=4 # Justify
     )
 
     entry_title_style = ParagraphStyle(
         'EntryTitle',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=8.4,
-        leading=11.0,
+        fontSize=8.2,
+        leading=10.5,
         textColor=TEXT_DARK
     )
 
@@ -88,8 +96,8 @@ def build_pdf(filename="resume.pdf"):
         'EntrySubtitle',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=7.8,
-        leading=10.5,
+        fontSize=7.6,
+        leading=10.0,
         textColor=TEXT_MUTED
     )
 
@@ -97,8 +105,8 @@ def build_pdf(filename="resume.pdf"):
         'SkillLabel',
         parent=styles['Normal'],
         fontName='Helvetica-Bold',
-        fontSize=8.0,
-        leading=10.8,
+        fontSize=7.7,
+        leading=10.2,
         textColor=TEXT_DARK
     )
 
@@ -106,8 +114,8 @@ def build_pdf(filename="resume.pdf"):
         'SkillValue',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=8.0,
-        leading=10.8,
+        fontSize=7.7,
+        leading=10.2,
         textColor=TEXT_DARK
     )
 
@@ -115,22 +123,22 @@ def build_pdf(filename="resume.pdf"):
         'BulletText',
         parent=styles['Normal'],
         fontName='Helvetica',
-        fontSize=7.85,
-        leading=10.5,
+        fontSize=7.6,
+        leading=10.0,
         textColor=TEXT_DARK,
-        leftIndent=10,
-        firstLineIndent=-6
+        leftIndent=9,
+        firstLineIndent=-5
     )
 
     story = []
 
     # ==========================
-    # HEADER (2026 Trend: Live Portfolio + GitHub + LinkedIn + Contact)
+    # HEADER (Live Portfolio + GitHub + LinkedIn + Contact)
     # ==========================
     story.append(Paragraph("AHM ZAFIR HASAN", name_style))
+    story.append(Spacer(1, 1.0))
+    story.append(Paragraph("JUNIOR SOFTWARE ENGINEER &bull; FULL-STACK .NET &amp; WEB SYSTEMS", title_style))
     story.append(Spacer(1, 1.5))
-    story.append(Paragraph("FULL-STACK DEVELOPER &bull; .NET &amp; WEB SYSTEMS", title_style))
-    story.append(Spacer(1, 2.0))
     
     contact_line_1 = [
         "Dhaka, Bangladesh",
@@ -138,7 +146,7 @@ def build_pdf(filename="resume.pdf"):
         '<a href="mailto:ahmzafirhasan@gmail.com"><font color="#0284C7">ahmzafirhasan@gmail.com</font></a>'
     ]
     story.append(Paragraph(" &nbsp;&bull;&nbsp; ".join(contact_line_1), contact_style))
-    story.append(Spacer(1, 1.0))
+    story.append(Spacer(1, 0.8))
 
     contact_line_2 = [
         '<a href="https://zafff-e.github.io"><font color="#0284C7"><b>Portfolio:</b> zafff-e.github.io</font></a>',
@@ -146,27 +154,36 @@ def build_pdf(filename="resume.pdf"):
         '<a href="https://linkedin.com/in/zafir-hasan-developer"><font color="#0284C7"><b>LinkedIn:</b> in/zafir-hasan-developer</font></a>'
     ]
     story.append(Paragraph(" &nbsp;&bull;&nbsp; ".join(contact_line_2), contact_style))
-    story.append(Spacer(1, 3.0))
-    story.append(HRFlowable(width="100%", thickness=1.2, color=PRIMARY, spaceBefore=0, spaceAfter=3.5))
+    story.append(Spacer(1, 2.5))
+    story.append(HRFlowable(width="100%", thickness=1.0, color=PRIMARY, spaceBefore=0, spaceAfter=2.5))
 
     # Helper for Section Title with line
     def add_section_header(title):
         p = Paragraph(f"<b>{title.upper()}</b>", section_header_style)
         story.append(p)
-        story.append(HRFlowable(width="100%", thickness=0.6, color=LINE_COLOR, spaceBefore=1.0, spaceAfter=2.8))
+        story.append(HRFlowable(width="100%", thickness=0.5, color=LINE_COLOR, spaceBefore=0.8, spaceAfter=2.0))
 
     # ==========================
-    # 1. TECHNICAL SKILLS (2026 Categorized ATS Keywords)
+    # 1. PROFESSIONAL SUMMARY
+    # ==========================
+    add_section_header("Professional Summary")
+    story.append(Paragraph(
+        "Results-driven <b>Junior Software Engineer / Full-Stack .NET Developer</b> with hands-on enterprise application development training via the prestigious <b>IsDB-BISEW IT Scholarship Programme</b> (Round 70, Trainee ID: 1294926). Proficient in building high-performance RESTful Web APIs, scalable relational databases, and dynamic SPAs using <b>C#, ASP.NET Core (.NET 9/8), EF Core, SQL Server (T-SQL), React 19, and Angular</b>. Strong expertise in software engineering patterns (Repository, Factory, DTOs), multi-tier architecture, and real-time WebSockets. Grounded in quantitative analysis with an Economics degree from the <b>University of Dhaka</b> and an <b>IELTS Band 7.5</b>.",
+        summary_style
+    ))
+    story.append(Spacer(1, 2.0))
+
+    # ==========================
+    # 2. TECHNICAL SKILLS
     # ==========================
     add_section_header("Technical Skills")
     
     skills = [
-        ("Languages", "C#, JavaScript (ES6+), TypeScript, SQL, HTML5, CSS3"),
-        ("Backend & Web APIs", "ASP.NET Core (.NET 9), ASP.NET MVC 5, Node.js, Express.js, RESTful Web APIs, WebSockets"),
-        ("Databases & ORM", "Microsoft SQL Server (T-SQL), MongoDB, Entity Framework Core, Mongoose, 3NF Normalization"),
-        ("Frontend Development", "React 19, Angular, Component Architecture, Single Page Applications (SPA), Tailwind CSS"),
-        ("Architecture & Security", "Master-Detail Systems, Repository Pattern, DTOs, JWT Bearer Auth, bcrypt Hashing, CORS"),
-        ("Tools & Cloud", "Git, GitHub (Branching, PRs, Code Reviews), Postman (API Testing), Microsoft Azure, VS Code, CI/CD")
+        ("Backend Development", "C# (.NET 9/8, .NET Framework 4.8), ASP.NET Core Web API, Minimal APIs, ASP.NET MVC 5, Web API 2, Node.js, Express.js"),
+        ("Databases & ORM", "Microsoft SQL Server (T-SQL, Stored Procs, TVPs, Transactions, Schemabound Views, UDFs, Indexing), EF Core, EF6, ADO.NET, MongoDB"),
+        ("Frontend Development", "React 19 / 18, TypeScript, JavaScript (ES6+), Angular (Standalone Components), HTML5, CSS3, Bootstrap 5, Vite, Axios, EJS"),
+        ("Architecture & Security", "3-Tier Architecture, Master-Detail Relational Architecture, Repository Pattern, Factory Pattern, DTOs, JWT Bearer, OWIN OAuth, bcrypt"),
+        ("Tools & Platforms", "Visual Studio 2022, VS Code, SQL Server Management Studio (SSMS), Git, GitHub (Branching, PRs), Postman, Swagger/OpenAPI")
     ]
     
     skill_rows = []
@@ -175,151 +192,147 @@ def build_pdf(filename="resume.pdf"):
         col2 = Paragraph(items, skill_value_style)
         skill_rows.append([col1, col2])
 
-    skill_table = Table(skill_rows, colWidths=[135, 396])
+    skill_table = Table(skill_rows, colWidths=[125, 410])
     skill_table.setStyle(TableStyle([
         ('VALIGN', (0,0), (-1,-1), 'TOP'),
-        ('TOPPADDING', (0,0), (-1,-1), 0.25),
-        ('BOTTOMPADDING', (0,0), (-1,-1), 0.25),
+        ('TOPPADDING', (0,0), (-1,-1), 0.15),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 0.15),
         ('LEFTPADDING', (0,0), (-1,-1), 0),
         ('RIGHTPADDING', (0,0), (-1,-1), 0),
     ]))
     story.append(skill_table)
-    story.append(Spacer(1, 2.5))
+    story.append(Spacer(1, 2.0))
 
     # ==========================
-    # 2. SOFTWARE ENGINEERING PROJECTS (PAR / Quantified Impact + Clickable Repos)
+    # 3. FEATURED SOFTWARE PROJECTS
     # ==========================
-    add_section_header("Software Engineering Projects")
+    add_section_header("Featured Software Projects")
 
-    # Project 1: TechNova E-Commerce (Node.js, Express, MongoDB)
+    # Project 1: ProductCatalogSPA
     p1_header = [
-        Paragraph("<b>TechNova E-Commerce Platform</b> | <font color='#475569'><i>Node.js, Express.js, MongoDB, WebSockets, bcrypt</i></font>", entry_title_style),
-        Paragraph('<a href="https://github.com/Zafff-e"><font color="#0284C7"><b>GitHub ↗</b></font></a>', ParagraphStyle('R1', parent=entry_subtitle_style, alignment=2))
+        Paragraph("<b>ProductCatalogSPA &amp; Product Management System</b> | <font color='#475569'><i>C#, ASP.NET Core (.NET 9), EF Core, SQL Server, React 19, Angular</i></font>", entry_title_style),
+        Paragraph('<a href="https://github.com/Zafff-e/AspNetCore-ProductCatalog-MVC"><font color="#0284C7"><b>GitHub ↗</b></font></a>', ParagraphStyle('R1', parent=entry_subtitle_style, alignment=2))
     ]
-    t1 = Table([p1_header], colWidths=[455, 76])
+    t1 = Table([p1_header], colWidths=[460, 75])
     t1.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(t1)
-    story.append(Spacer(1, 0.6))
-    story.append(Paragraph("&bull; Architected a modular backend using <b>Node.js &amp; Express.js</b>, deploying 12+ RESTful endpoints for user auth, product catalogs, shopping cart sessions, and cash-on-delivery order processing.", bullet_style))
-    story.append(Paragraph("&bull; Modeled normalized document schemas and references using <b>MongoDB &amp; Mongoose</b>; integrated <b>WebSockets</b> for real-time inventory level updates without client polling.", bullet_style))
-    story.append(Paragraph("&bull; Enforced secure password protection via <b>bcrypt</b> hashing and session tokens; automated transactional order validation and dynamic invoice tracking.", bullet_style))
-    story.append(Spacer(1, 2.4))
+    story.append(Spacer(1, 0.4))
+    story.append(Paragraph("&bull; Architected high-throughput RESTful Web API with single-controller CRUD routing, normalized Category-Product-Brand relations, and automated database seeding (`EnsureCreated()`).", bullet_style))
+    story.append(Paragraph("&bull; Built dual clients: Angular client with dynamic brand row insertions and cascading deletes; React 19 client with Table and Card/Grid views and instant search filtering.", bullet_style))
+    story.append(Paragraph("&bull; Implemented secure `multipart/form-data` image streaming with GUID file naming to prevent collisions, zero-latency previews, and JWT authentication.", bullet_style))
+    story.append(Spacer(1, 1.8))
 
-    # Project 2: ProductCatalogSPA Master-Detail Platform (.NET 9 & React/Angular)
+    # Project 2: TechNova E-Commerce
     p2_header = [
-        Paragraph("<b>Product Catalog &amp; Master-Detail System</b> | <font color='#475569'><i>C#, ASP.NET Core (.NET 9), EF Core, SQL Server, React 19</i></font>", entry_title_style),
-        Paragraph('<a href="https://github.com/Zafff-e/AspNetCore-ProductCatalog-MVC"><font color="#0284C7"><b>GitHub ↗</b></font></a>', ParagraphStyle('R2', parent=entry_subtitle_style, alignment=2))
+        Paragraph("<b>TechNova &mdash; Real-Time Tech Hardware E-Commerce</b> | <font color='#475569'><i>Node.js, Express.js, MongoDB (Mongoose), WebSockets, bcrypt</i></font>", entry_title_style),
+        Paragraph('<a href="https://github.com/Zafff-e"><font color="#0284C7"><b>GitHub ↗</b></font></a>', ParagraphStyle('R2', parent=entry_subtitle_style, alignment=2))
     ]
-    t2 = Table([p2_header], colWidths=[455, 76])
+    t2 = Table([p2_header], colWidths=[460, 75])
     t2.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(t2)
-    story.append(Spacer(1, 0.6))
-    story.append(Paragraph("&bull; Engineered high-throughput RESTful Web APIs handling normalized Category-Product-Brand master-detail CRUD hierarchies, utilizing EF Core Code-First migrations and DTO contracts.", bullet_style))
-    story.append(Paragraph("&bull; Developed dual frontend clients: Angular client with dynamic child brand insertions, and React 19 client featuring instant search filtering and dual Grid/Table view modes.", bullet_style))
-    story.append(Paragraph("&bull; Implemented memory-safe multipart image streaming with GUID file naming to prevent server collisions, coupled with zero-latency client-side thumbnail previews.", bullet_style))
-    story.append(Spacer(1, 2.4))
+    story.append(Spacer(1, 0.4))
+    story.append(Paragraph("&bull; Developed full-stack e-commerce hardware store with product catalogs, shopping cart sessions, cash-on-delivery checkout, and MongoDB normalized document models.", bullet_style))
+    story.append(Paragraph("&bull; Integrated bi-directional <b>WebSockets (`ws`)</b> to push live inventory levels and order status updates without polling; enforced bcrypt password hashing.", bullet_style))
+    story.append(Paragraph("&bull; Automated transactional order confirmations via Nodemailer and generated dynamic QR Codes for invoice retrieval and package delivery tracking.", bullet_style))
+    story.append(Spacer(1, 1.8))
 
-    # Project 3: Capstone Booking Marketplace
+    # Project 3: Employee Master-Details
     p3_header = [
-        Paragraph("<b>Skill-Commerce Booking Marketplace</b> | <font color='#475569'><i>C#, ASP.NET Core, Angular, SQL Server, REST API Architecture</i></font>", entry_title_style),
+        Paragraph("<b>Employee Master-Details Enterprise Management</b> | <font color='#475569'><i>ASP.NET Core Web API, EF Core, SQL Server, React 18, TypeScript</i></font>", entry_title_style),
         Paragraph('<a href="https://github.com/Zafff-e"><font color="#0284C7"><b>GitHub ↗</b></font></a>', ParagraphStyle('R3', parent=entry_subtitle_style, alignment=2))
     ]
-    t3 = Table([p3_header], colWidths=[455, 76])
+    t3 = Table([p3_header], colWidths=[460, 75])
     t3.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(t3)
-    story.append(Spacer(1, 0.6))
-    story.append(Paragraph("&bull; Serving as backend and database lead on team capstone designing <b>RESTful API services</b> for customer bookings, provider scheduling, and profile management.", bullet_style))
-    story.append(Paragraph("&bull; Established API contracts, led daily standups, and managed the team repository on <b>Git/GitHub</b> with active branch protection and peer code reviews.", bullet_style))
-    story.append(Spacer(1, 2.4))
+    story.append(Spacer(1, 0.4))
+    story.append(Paragraph("&bull; Engineered master-detail persistence resolving multipart payload constraints by combining binary image streams with client-serialized JSON strings (`EXperiencesString`).", bullet_style))
+    story.append(Paragraph("&bull; Designed transactional <b>Wipe &amp; Re-insert</b> pattern in HTTP PUT endpoint to synchronize child collections without orphaned records; applied `AsNoTracking()` read optimization.", bullet_style))
+    story.append(Paragraph("&bull; Built memory-safe UI state using `crypto.randomUUID()` for Virtual DOM stability and `URL.revokeObjectURL()` to eliminate client memory leaks during uploads.", bullet_style))
+    story.append(Spacer(1, 1.8))
 
-    # Project 4: Monthly Power Plant Generation Relational Database
+    # Project 4: Skill-Commerce Capstone / ShortAPI
     p4_header = [
-        Paragraph("<b>Power Plant Operations Database Architecture</b> | <font color='#475569'><i>Microsoft SQL Server, Relational Design (3NF), T-SQL</i></font>", entry_title_style),
-        Paragraph('<a href="https://github.com/Zafff-e/-Power-Plant-Operations-Reporting-Database."><font color="#0284C7"><b>GitHub ↗</b></font></a>', ParagraphStyle('R4', parent=entry_subtitle_style, alignment=2))
+        Paragraph("<b>Skill-Commerce Marketplace &amp; Supply Chain Web API (ShortAPI)</b> | <font color='#475569'><i>C#, ASP.NET Core, OWIN OAuth 2.0, SQL Server, Postman</i></font>", entry_title_style),
+        Paragraph('<a href="https://github.com/Zafff-e"><font color="#0284C7"><b>GitHub ↗</b></font></a>', ParagraphStyle('R4', parent=entry_subtitle_style, alignment=2))
     ]
-    t4 = Table([p4_header], colWidths=[455, 76])
+    t4 = Table([p4_header], colWidths=[460, 75])
     t4.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(t4)
-    story.append(Spacer(1, 0.6))
-    story.append(Paragraph("&bull; Designed a normalized 3NF relational database schema across 12+ tables modeling monthly power generation metrics, plant operations, and fuel types from industrial records.", bullet_style))
-    story.append(Paragraph("&bull; Transformed raw operational spreadsheets into structured SQL tables, enforcing primary/foreign keys, referential integrity, and indexed queries for high-speed reporting.", bullet_style))
-    story.append(Spacer(1, 2.5))
+    story.append(Spacer(1, 0.4))
+    story.append(Paragraph("&bull; Backend &amp; database lead on capstone booking platform: architected relational schema, appointment booking states, and 15+ normalized REST API endpoints.", bullet_style))
+    story.append(Paragraph("&bull; Built enterprise REST API secured by OWIN OAuth 2.0 tokens, custom `MultipartFormatter` for combined JSON and raw byte arrays, and verified via Postman test suites.", bullet_style))
+    story.append(Spacer(1, 2.0))
 
     # ==========================
-    # 3. EXPERIENCE & TECHNICAL TRAINING
+    # 4. PROFESSIONAL EXPERIENCE & IT TRAINING
     # ==========================
-    add_section_header("Experience &amp; Technical Training")
+    add_section_header("Professional Experience &amp; IT Training")
 
-    # Training: IsDB
+    # IsDB Training
     tr_header = [
-        Paragraph("<b>IsDB-BISEW IT Scholarship Programme</b> | <font color='#475569'>Star Computer Systems Limited (SCSL)</font>", entry_title_style),
-        Paragraph("<font color='#475569'>Jan 2026 &ndash; Present</font>", ParagraphStyle('R5', parent=entry_subtitle_style, alignment=2))
+        Paragraph("<b>Enterprise Systems Analysis &amp; Design with C# .NET</b> &mdash; <i>IsDB-BISEW IT Scholarship Programme (SCSL)</i>", entry_title_style),
+        Paragraph("<font color='#475569'>Jan 2026 &ndash; Oct 2026</font>", ParagraphStyle('R5', parent=entry_subtitle_style, alignment=2))
     ]
-    t_tr = Table([tr_header], colWidths=[400, 131])
+    t_tr = Table([tr_header], colWidths=[420, 115])
     t_tr.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(t_tr)
-    story.append(Paragraph("<i>Enterprise Software Engineering Trainee (Intensive 9-Month Full-Time Diploma, Round 70)</i>", entry_subtitle_style))
-    story.append(Spacer(1, 0.5))
-    story.append(Paragraph("&bull; Selected for prestigious, fully-funded enterprise software engineering scholarship; completed 1,000+ hours of rigorous backend and full-stack software development.", bullet_style))
-    story.append(Paragraph("&bull; Built and deployed 8+ enterprise applications spanning <b>Database Design &amp; Implementation (MS SQL Server)</b>, <b>C# / ASP.NET Core Web APIs (.NET 9)</b>, <b>Entity Framework Core</b>, and <b>Cloud Services (Azure)</b>.", bullet_style))
-    story.append(Spacer(1, 2.0))
-
-    # Headless Technology
-    s_header = [
-        Paragraph("<b>Headless Technology</b> | <font color='#475569'>Web Development &amp; IT Associate</font>", entry_title_style),
-        Paragraph("<font color='#475569'>Jan 2019 &ndash; Dec 2020</font>", ParagraphStyle('R6', parent=entry_subtitle_style, alignment=2))
-    ]
-    ts = Table([s_header], colWidths=[400, 131])
-    ts.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
-    story.append(ts)
-    story.append(Spacer(1, 0.5))
-    story.append(Paragraph("&bull; Developed and maintained web applications and supported IT infrastructure; managed database updates and implemented technical solutions for client workflows.", bullet_style))
-    story.append(Spacer(1, 2.0))
+    story.append(Spacer(1, 0.3))
+    story.append(Paragraph("&bull; Completed intensive 9-month professional software engineering curriculum (Trainee ID: <b>1294926</b>, Round 70), dedicating 1,000+ hours to enterprise software development.", bullet_style))
+    story.append(Paragraph("&bull; Built and deployed 8+ full-stack and multi-tier applications across desktop, web, and cloud; served as backend and database lead on capstone <b>Skill-Commerce</b> marketplace.", bullet_style))
+    story.append(Spacer(1, 1.6))
 
     # Marico Bangladesh Limited
     m_header = [
-        Paragraph("<b>Marico Bangladesh Limited</b> | <font color='#475569'>Management Trainee Officer</font>", entry_title_style),
-        Paragraph("<font color='#475569'>Jan 2021 &ndash; Feb 2022</font>", ParagraphStyle('R7', parent=entry_subtitle_style, alignment=2))
+        Paragraph("<b>Management Trainee Officer</b> &mdash; <i>Marico Bangladesh Limited, Dhaka</i>", entry_title_style),
+        Paragraph("<font color='#475569'>2021 &ndash; 2022</font>", ParagraphStyle('R6', parent=entry_subtitle_style, alignment=2))
     ]
-    tm = Table([m_header], colWidths=[400, 131])
+    tm = Table([m_header], colWidths=[420, 115])
     tm.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
     story.append(tm)
-    story.append(Spacer(1, 0.5))
-    story.append(Paragraph("&bull; Collaborated with commercial teams to analyze market performance data, evaluate distribution metrics, and prepare quantitative executive reports.", bullet_style))
-    story.append(Spacer(1, 2.5))
+    story.append(Spacer(1, 0.3))
+    story.append(Paragraph("&bull; Analyzed business KPIs, regional market trends, and distribution performance metrics; collaborated with cross-functional commercial teams to deliver quantitative executive presentations.", bullet_style))
+    story.append(Spacer(1, 1.6))
+
+    # IT Instructor / Coordinator
+    inst_header = [
+        Paragraph("<b>IT Workshop Coordinator / ICT Instructor</b> &mdash; <i>Freelance / Community Initiatives, Dhaka</i>", entry_title_style),
+        Paragraph("<font color='#475569'>Prior Experience</font>", ParagraphStyle('R7', parent=entry_subtitle_style, alignment=2))
+    ]
+    t_inst = Table([inst_header], colWidths=[420, 115])
+    t_inst.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
+    story.append(t_inst)
+    story.append(Spacer(1, 0.3))
+    story.append(Paragraph("&bull; Instructed students and trainees in computer fundamentals, relational database logic, and productivity workflows.", bullet_style))
+    story.append(Spacer(1, 2.0))
 
     # ==========================
-    # 4. EDUCATION & QUALIFICATIONS
+    # 5. EDUCATION & CERTIFICATIONS
     # ==========================
     add_section_header("Education &amp; Qualifications")
 
-    edu_isdb = [
-        Paragraph("<b>IsDB-BISEW IT Scholarship</b> &mdash; Professional Diploma in Enterprise Systems Development (C# .NET)", entry_title_style),
-        Paragraph("<font color='#475569'>2026</font>", ParagraphStyle('R8', parent=entry_subtitle_style, alignment=2))
+    edu_rows = [
+        [
+            Paragraph("<b>Diploma in Enterprise Systems Development (C# .NET)</b> &mdash; IsDB-BISEW IT Scholarship Programme (SCSL)", entry_title_style),
+            Paragraph("<font color='#475569'>2026</font>", ParagraphStyle('R8', parent=entry_subtitle_style, alignment=2))
+        ],
+        [
+            Paragraph("<b>Bachelor of Social Sciences (B.S.S. Hons) in Economics</b> &mdash; University of Dhaka (DU)", entry_title_style),
+            Paragraph("<font color='#475569'>2014 &ndash; 2019</font>", ParagraphStyle('R9', parent=entry_subtitle_style, alignment=2))
+        ],
+        [
+            Paragraph("<b>Certifications &amp; Languages:</b> <b>IELTS Band 7.5</b> (CEFR C1 &mdash; Proficient) &bull; Bengali (Native) &bull; HSC (CPSCR)", entry_subtitle_style),
+            Paragraph("<font color='#475569'>CEFR C1 Proficient</font>", ParagraphStyle('R10', parent=entry_subtitle_style, alignment=2))
+        ]
     ]
-    t_edu1 = Table([edu_isdb], colWidths=[430, 101])
-    t_edu1.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
-    story.append(t_edu1)
-    story.append(Spacer(1, 1.2))
-
-    edu_du = [
-        Paragraph("<b>University of Dhaka</b> &mdash; Bachelor of Social Sciences (B.S.S. Hons) in Economics", entry_title_style),
-        Paragraph("<font color='#475569'>2014 &ndash; 2019</font>", ParagraphStyle('R9', parent=entry_subtitle_style, alignment=2))
-    ]
-    t_edu2 = Table([edu_du], colWidths=[430, 101])
-    t_edu2.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
-    story.append(t_edu2)
-    story.append(Paragraph("&bull; Quantitative foundation in Econometrics, Mathematical Statistics, and Analytical Data Modeling.", bullet_style))
-    story.append(Spacer(1, 1.5))
-
-    # Credentials row (IELTS Band 7.5 + College)
-    cred_row = [
-        Paragraph("<b>Certifications &amp; Languages:</b> <b>IELTS Band 7.5</b> (CEFR C1 &mdash; Proficient) &bull; Bengali (Native) &bull; HSC (CPSCR)", entry_subtitle_style),
-        Paragraph("<font color='#475569'>Proficient User</font>", ParagraphStyle('R10', parent=entry_subtitle_style, alignment=2))
-    ]
-    t_cred = Table([cred_row], colWidths=[430, 101])
-    t_cred.setStyle(TableStyle([('VALIGN', (0,0), (-1,-1), 'TOP'), ('PADDING', (0,0), (-1,-1), 0)]))
-    story.append(t_cred)
+    t_edu = Table(edu_rows, colWidths=[425, 110])
+    t_edu.setStyle(TableStyle([
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('TOPPADDING', (0,0), (-1,-1), 0.3),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 0.3),
+        ('LEFTPADDING', (0,0), (-1,-1), 0),
+        ('RIGHTPADDING', (0,0), (-1,-1), 0),
+    ]))
+    story.append(t_edu)
 
     doc.build(story)
 

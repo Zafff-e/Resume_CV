@@ -1,46 +1,81 @@
-# [Full Name]
-[City, Country] | [Professional Email] | [Phone Number] 
-LinkedIn: [LinkedIn URL] | GitHub: [GitHub URL] | Portfolio: [Portfolio Website]
+# AHM ZAFIR HASAN
+**Dhaka, Bangladesh** | **+880 1747 544 273** | **ahmzafirhasan@gmail.com**  
+[Portfolio: zafff-e.github.io](https://zafff-e.github.io) | [GitHub: github.com/Zafff-e](https://github.com/Zafff-e) | [LinkedIn: linkedin.com/in/zafir-hasan-developer](https://linkedin.com/in/zafir-hasan-developer)
+
+---
 
 ## PROFESSIONAL SUMMARY
-Motivated entry-level software developer transitioning into the technology sector, equipped with comprehensive, structured training through the IsDB IT Scholarship Programme. Possesses a strong foundation in backend development, specifically with C#, ASP.NET Core, and REST APIs, alongside practical experience building relational databases and full-stack web applications. Eager to contribute technical skills and build impactful software in a software engineering internship or junior developer role.
+Results-driven **Junior Software Engineer / Full-Stack .NET Developer** with extensive, hands-on enterprise application development training through the prestigious **IsDB-BISEW IT Scholarship Programme** (Round 70, Trainee ID: `1294926`). Proficient in building high-performance RESTful Web APIs, scalable relational databases, and dynamic Single Page Applications utilizing **C#, ASP.NET Core (.NET 9/8), Entity Framework Core, SQL Server (T-SQL), React 19, and Angular**. Demonstrates solid expertise in software engineering patterns (Repository, Factory, DTOs), multi-tier architecture, and real-time duplex communication (WebSockets). Brings a disciplined analytical background with a degree in Economics from the **University of Dhaka** and an **IELTS Band 7.5** English proficiency.
+
+---
 
 ## TECHNICAL SKILLS
-*   **Languages:** C#, JavaScript, SQL, HTML5, CSS3, XML
-*   **Frameworks & Platforms:** .NET, ASP.NET Core, ASP.NET MVC, ASP.NET Web API, Entity Framework Core, Entity Framework, Angular, Node.js, Express.js, Blazor, .NET MAUI
-*   **Databases:** Microsoft SQL Server, MongoDB
-*   **Tools:** Git, GitHub, Postman, Visual Studio
-*   **Concepts:** REST APIs, CRUD, Authentication, Authorization, Relational Database Design, Entity Relationships, API Development
+* **Backend Development:** C# (.NET 9, .NET 8, .NET Framework 4.8), ASP.NET Core Web API, Minimal APIs, ASP.NET MVC 5, ASP.NET Web API 2, Node.js, Express.js.
+* **Database & ORM:** Microsoft SQL Server (T-SQL, Stored Procedures, Table-Valued Parameters, Transactions, Schemabound Views, UDFs, Indexing), Entity Framework Core (Code-First & DB-First, Migrations), EF6, ADO.NET, MongoDB, Mongoose.
+* **Frontend Development:** React 19 / 18, TypeScript, JavaScript (ES6+), Angular (Standalone Components), HTML5, CSS3, Bootstrap 5, jQuery, Vite, Axios, EJS.
+* **Architecture & Patterns:** 3-Tier Architecture, Master-Detail Relational Architecture, Repository Pattern, Factory Pattern, Dependency Injection, Data Transfer Objects (DTOs), Multipart Stream Handling.
+* **Security & Testing:** JWT Bearer Authentication, OWIN OAuth 2.0 (`/token`), Claims/Role-based Authorization, Bcrypt Hashing, CORS, Postman API Testing, MSTest/Unit Testing.
+* **Tools & Platforms:** Visual Studio 2022, Visual Studio Code, SQL Server Management Studio (SSMS), Git, GitHub, Swagger/OpenAPI, SAP Crystal Reports.
 
-## PROJECTS
+---
 
-**Supply Chain Web API** 
-*Technology: C#, ASP.NET Core, ASP.NET Web API, Entity Framework Core, SQL Server, Postman*
-*   Developed a backend RESTful API to manage master-detail data structures for a supply chain application, implementing complete CRUD operations.
-*   Designed a relational database schema supporting multiple data types and complex entity relationships.
-*   Integrated token-based authentication and authorization to secure REST API endpoints.
-*   Tested and validated API endpoints, Data Transfer Objects (DTOs), and JSON responses using Postman to ensure reliable backend functionality.
+## FEATURED SOFTWARE PROJECTS
 
-**E-Commerce Web Application** 
-*Technology: Node.js, Express.js, MongoDB, HTML5, CSS3, JavaScript, jQuery*
-*   Built a full-stack e-commerce platform featuring dynamic product listings, a shopping cart, and secure user registration/login workflows.
-*   Developed a comprehensive order processing system supporting address collection, estimated delivery tracking, and a cash-on-delivery workflow.
-*   Implemented conceptual email verification, product receiving confirmation, and QR-code-related workflows.
-*   Designed real-time, interactive user interfaces incorporating WebSocket-related functionality for enhanced user experience.
+### ProductCatalogSPA & Product Management System | *Full-Stack Master-Detail Platform*
+**Tech Stack:** C#, ASP.NET Core Web API (.NET 9), Entity Framework Core, SQL Server LocalDB, React 19, TypeScript, Angular, Vite, Swagger
+* Architected a high-throughput RESTful Web API with single-controller CRUD routing, normalized database relations (Category-Product-Brand), and automated database seeding (`EnsureCreated()`).
+* Engineered dual Single Page Application clients: an Angular client supporting dynamic brand row insertions with cascading deletes, and a React 19 client featuring dual Table and Card/Grid view modes with instant search and category filtering.
+* Implemented secure `multipart/form-data` image streaming with GUID file naming to prevent server disk collisions, coupled with zero-latency client-side thumbnail previews.
+* Secured API endpoints with JWT bearer authentication, role-based claims policies, and CORS configuration.
 
-**Power Plant Generation Database** 
-*Technology: Microsoft SQL Server, SQL, Data Modeling*
-*   Modeled monthly power generation and plant operational data across a fiscal year based on real-world industrial specifications.
-*   Designed a highly normalized relational database schema comprising core entities such as PowerPlant, FuelType, TimePeriod, and PlantOperation.
-*   Transformed unstructured operational spreadsheet data into structured relational tables using SQL queries.
+### TechNova — Real-Time Tech Hardware E-Commerce | *Full-Stack Web Application*
+**Tech Stack:** Node.js, Express.js, MongoDB (Mongoose), WebSockets (`ws`), EJS, Multer, Nodemailer, QRCode, Bcrypt.js
+* Developed a full-stack e-commerce hardware store featuring product catalog navigation, shopping cart sessions, dynamic checkout, and order status tracking.
+* Integrated bi-directional real-time communication via WebSockets (`ws`) to push live inventory levels and immediate order updates without client polling.
+* Built automated checkout flows supporting cash-on-delivery, transactional email notifications via Nodemailer, and dynamic QR Code generation for invoice retrieval and package delivery tracking.
+* Protected user accounts with Bcrypt password hashing, session state persistence, and role-based administrative routes.
 
-## EDUCATION & IT TRAINING
+### Employee Master-Details Enterprise Management | *Full-Stack CRUD Application*
+**Tech Stack:** ASP.NET Core Web API, EF Core, SQL Server, React 18, TypeScript, Vite, Bootstrap 5, Axios
+* Engineered a robust master-detail persistence system resolving complex multipart HTTP payloads by combining binary image streams with client-serialized JSON strings (`EXperiencesString`).
+* Designed and implemented the transactional **Wipe & Re-insert** pattern in the HTTP PUT endpoint to synchronize dynamic child collections without orphaned database records.
+* Implemented memory-safe frontend state management with `crypto.randomUUID()` for stable virtual DOM keys and `URL.revokeObjectURL()` to eliminate client memory leaks during image uploads.
+* Applied 3NF database normalization with foreign key constraints, `AsNoTracking()` read query optimization, and automated cascade deletion.
 
-**Software Development / IT Training** | 2026
-*Star Computer Systems Limited (IsDB IT Scholarship Programme)*
-*   Completed intensive, structured technical training focusing on enterprise Microsoft technologies and modern full-stack web development.
-*   Gained practical experience through modules including Database Design (SQL Server), C#/.NET Framework, ASP.NET Core Web Applications, ASP.NET Web APIs, Entity Framework Core, and Angular.
+### Supply Chain & Category-Product RESTful Web API (ShortAPI) | *Backend System*
+**Tech Stack:** ASP.NET Web API 2, Entity Framework 6, OWIN OAuth 2.0 Bearer Tokens, SQL Server, Postman
+* Built an enterprise REST API secured by OWIN OAuth 2.0 token authentication with custom resource owner password credentials validation.
+* Authored a custom `MultipartFormatter : MediaTypeFormatter` to bind multi-part HTTP requests containing entity models and raw image byte arrays in a single round-trip.
+* Configured role-based security (`Admin` vs. `User`) and validated API reliability through extensive Postman test suites.
 
-## ADDITIONAL EXPERIENCE
-**[Previous Job Title]** | [Previous Company] | [Start Year] – [End Year]
-*   [Optional: Briefly describe responsibilities focusing on transferable professional skills. Omit section if not applicable.]
+---
+
+## PROFESSIONAL EXPERIENCE & IT TRAINING
+
+**Enterprise Systems Analysis & Design with C# .NET (WADA / ESAD-CS)**  
+*IsDB-BISEW IT Scholarship Programme — Star Computer Systems Limited (SCSL), Dhaka* | **Jan 2026 – Oct 2026**
+* Completed an intensive, full-time 9-month professional software engineering curriculum (Trainee ID: `1294926`, Round 70).
+* Built and deployed 8+ full-stack and multi-tier applications across desktop, web, and cloud-ready architectures.
+* Served as backend and database lead on the capstone **Skill-Commerce** hyperlocal skilled-worker marketplace platform.
+
+**Management Trainee Officer**  
+*Marico Bangladesh Limited, Dhaka* | **2021 – 2022**
+* Analyzed business KPIs, market trends, and product performance data across regional distribution networks.
+* Collaborated with cross-functional commercial teams to evaluate structured market research and present actionable insights.
+
+**IT Workshop Coordinator / ICT Instructor**  
+*Freelance / Community Initiatives, Dhaka* | **Prior Experience**
+* Mentored students on computer fundamentals, relational database logic, and productivity tools.
+
+---
+
+## EDUCATION
+* **IsDB-BISEW IT Scholarship Diploma in Enterprise Systems Development (C# .NET)** | SCSL, Dhaka (2026)
+* **Bachelor of Social Sciences (B.S.S.) in Economics** | University of Dhaka, Bangladesh (2014 – 2019)
+* **Higher Secondary Certificate (HSC)** | Cantonment Public School & College (2011 – 2013)
+
+---
+
+## CERTIFICATIONS & LANGUAGES
+* **English Language Proficiency:** **IELTS Band 7.5** (CEFR Level C1 — Proficient User)
+* **Languages:** English (Professional Proficiency), Bengali (Native)
