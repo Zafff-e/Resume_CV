@@ -74,3 +74,10 @@ Passionate and analytical aspiring Software Developer focused on building reliab
 ## CERTIFICATIONS & LANGUAGES
 * **English Language Proficiency:** **IELTS Band 7.5** (CEFR Level C1 — Proficient User)
 * **Native Language:** Bengali (Native)
+
+---
+
+## PROFESSIONAL REFERENCE
+* **Nishat Sharmeen** — Senior Faculty of Cross Platform Apps using ASP.NET, Angular & React  
+  *IsDB-BISEW IT Scholarship Project*  
+  Email: [nishatsharmeen@gmail.com](mailto:nishatsharmeen@gmail.com) | LinkedIn: [linkedin.com/in/nishat-sharmeen-71996132](https://www.linkedin.com/in/nishat-sharmeen-71996132/)

@@ -386,8 +386,22 @@ def build_modern_resume(pdf_path="AhmZafirHasan_Resume_Modern.pdf"):
     right.append(Paragraph("<b>IELTS Band 7.5</b> (CEFR Level C1 &mdash; Proficient User)", sidebar_val_style))
     right.append(Spacer(1, 1.0))
     right.append(Paragraph("<font color='#475569'><i>Listening: 8.5 &bull; Reading: 8.0 &bull; Speaking: 7.0 &bull; Writing: 6.5</i></font>", sidebar_edu_note))
-    right.append(Spacer(1, 4.0))
+    right.append(Spacer(1, 3.5))
     right.append(Paragraph("<b>Bengali:</b> Native &nbsp;&bull;&nbsp; <b>English:</b> Professional Working Fluency", sidebar_val_style))
+    right.append(Spacer(1, 3.5))
+
+    # 4. Professional Reference
+    right.extend(section_header("Professional Reference"))
+
+    right.append(Paragraph("<b>Nishat Sharmeen</b>", sidebar_edu_deg))
+    right.append(Spacer(1, 0.8))
+    right.append(Paragraph("Senior Faculty &bull; IsDB-BISEW IT Scholarship Project", sidebar_edu_sub))
+    right.append(Spacer(1, 0.8))
+    right.append(Paragraph("Cross Platform Apps using ASP.NET, Angular &amp; React", sidebar_edu_note))
+    right.append(Spacer(1, 1.2))
+    right.append(Paragraph("<a href=\"mailto:nishatsharmeen@gmail.com\"><font color=\"#0284C7\">nishatsharmeen@gmail.com</font></a>", sidebar_edu_note))
+    right.append(Spacer(1, 0.8))
+    right.append(Paragraph("<a href=\"https://www.linkedin.com/in/nishat-sharmeen-71996132/\"><font color=\"#0284C7\">LinkedIn: in/nishat-sharmeen-71996132</font></a>", sidebar_edu_note))
 
     # ==========================
     # MASTER 2-COLUMN TABLE

@@ -328,6 +328,22 @@ def build_pdf(filename="resume.pdf"):
         ('RIGHTPADDING', (0,0), (-1,-1), 0),
     ]))
     story.append(t_edu)
+    story.append(Spacer(1, 1.6))
+
+    # ==========================
+    # 6. PROFESSIONAL REFERENCE
+    # ==========================
+    add_section_header("Professional Reference")
+    ref_row = [
+        Paragraph("<b>Nishat Sharmeen</b> &mdash; Senior Faculty (Cross Platform Apps: ASP.NET, Angular &amp; React), <i>IsDB-BISEW</i>", entry_subtitle_style),
+        Paragraph('<a href="mailto:nishatsharmeen@gmail.com"><font color="#0284C7">nishatsharmeen@gmail.com</font></a> &bull; <a href="https://www.linkedin.com/in/nishat-sharmeen-71996132/"><font color="#0284C7">LinkedIn</font></a>', ParagraphStyle('R_Ref', parent=entry_subtitle_style, alignment=2))
+    ]
+    t_ref = Table([ref_row], colWidths=[375, 164])
+    t_ref.setStyle(TableStyle([
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('PADDING', (0,0), (-1,-1), 0),
+    ]))
+    story.append(t_ref)
 
     doc.build(story)
 
